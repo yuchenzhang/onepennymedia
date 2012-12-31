@@ -17,7 +17,7 @@ set :keep_releases, 10
 set :deploy_time, DateTime.now
 set :use_sudo, false
 set :default_environment, { 'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH" } # load rbenv for capistrano
-set :bundle_flags, "--deployment --deploy --test --quiet --binstubs --shebang ruby-local-exec"
+set :bundle_flags, "--deployment --without development test deploy --quiet --binstubs --shebang ruby-local-exec"
 
 namespace :onepennymedia do
   task :setup, :roles => :app do

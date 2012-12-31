@@ -4,6 +4,7 @@ app_path = "/home/shaoshing/app"
 worker_processes 1
 preload_app true
 timeout 180
+listen "/tmp/.sock", :backlog => 64
 listen "127.0.0.1:9000"
 
 # Spawn unicorn master worker for user apps (group: apps)

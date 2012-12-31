@@ -49,3 +49,7 @@ group :development, :test do
   gem 'rspec-rails', '>= 2.0.0.beta.20'
   gem 'simplecov', :require => false
 end
+
+group :deploy do
+  gem 'capistrano-unicorn', :require => false
+end

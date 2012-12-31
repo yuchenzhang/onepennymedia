@@ -1,4 +1,4 @@
-app_path = "/home/shaoshing/app"
+app_path = "/home/shaoshing/app/current"
 
 # Set unicorn options
 worker_processes 1
@@ -8,7 +8,7 @@ listen "/tmp/.sock", :backlog => 64
 listen "127.0.0.1:9000"
 
 # Spawn unicorn master worker for user apps (group: apps)
-user 'apps', 'apps'
+user 'shaoshing', 'shaoshing'
 
 # Fill path to your app
 working_directory app_path

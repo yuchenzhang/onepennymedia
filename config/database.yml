@@ -1,14 +1,14 @@
 development:
   adapter: sqlite3
-  database: db/db_development.sqlite3
+  database: db/sqlite3/development.sqlite3
   timeout: 5000
 
 test:
   adapter: sqlite3
-  database: db/db_test.sqlite3
+  database: db/sqlite3/test.sqlite3
   timeout: 5000
 
 production:
   adapter: sqlite3
-  database: db/db_production.sqlite3
+  database: db/sqlite3/production.sqlite3
   timeout: 5000

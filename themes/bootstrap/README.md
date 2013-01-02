@@ -32,7 +32,7 @@ Theme root
 \__ images
 \__ stylesheets
 \__ views
-    \__ articles
+  \__ articles
 	\__ categories
 	\__ comments
 	\__ layouts
@@ -72,7 +72,7 @@ By default, you won't need the whole theme structure, you may even want only to 
 
 ### 1.2.2 The layout
 
-The layout is where everything happens in your theme. There's a chance you will only need to change this. It is located in `views/layouts`. It is divided in 3 parts: 
+The layout is where everything happens in your theme. There's a chance you will only need to change this. It is located in `views/layouts`. It is divided in 3 parts:
 
 * Header
 * Main content
@@ -80,7 +80,7 @@ The layout is where everything happens in your theme. There's a chance you will 
 
 #### Header
 
-The header is the part between the `<head>` and `</head>` sections of the HTML. Typo provides 2 methods you should know about: 
+The header is the part between the `<head>` and `</head>` sections of the HTML. Typo provides 2 methods you should know about:
 
 `page_title` is the generated page title you should call in your `title` HTML tag. You can customize the title content into the admin SEO section.
 `page_header` includes many things like meta tags, description, some CSS, some Javascript...
@@ -102,7 +102,7 @@ If you don't like Bootstrap default background, you just need to overwrite the `
 
 Changing fonts and colors is easy as pie. Go to the Bootstrap [customization page][4] and do the changes you want. You may want to uncheck all the jqueries plugins, but what you want is the _customize variables_ section. Change what you want, then click on "download".
 
-You will download a zip file caled bootstrap.zip. Unzip it, it contains a css directory with 2 css files: 
+You will download a zip file caled bootstrap.zip. Unzip it, it contains a css directory with 2 css files:
 
 * bootstrap.css
 * bootstrap.min.css

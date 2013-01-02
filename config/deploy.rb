@@ -8,16 +8,31 @@ set :rails_env, "production"
 server "media.onepennyentrepreneur.com", :web, :app, :db, :primary => true
 set :user, "shaoshing"
 set :deploy_to, "/home/shaoshing/app"
-set :branch, "master" # should change to production
 
-set :scm, :none # :git
-set :repository, "." # "git@github.com:yuchenzhang/onepennymedia.git"
-set :deploy_via, :copy # remote_cache
+set :scm, :git
+set :branch, "production"
+set :repository, "git@github.com:yuchenzhang/onepennymedia.git"
+set :ssh_options, {:forward_agent => true}
+
+set :deploy_via, :remote_cache
 set :keep_releases, 10
 set :deploy_time, DateTime.now
 set :use_sudo, false
 set :default_environment, { 'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH" } # load rbenv for capistrano
 set :bundle_flags, "--deployment --without development test deploy --quiet --binstubs --shebang ruby-local-exec"
+
+
+namespace :deploy do
+  desc "tail production log files"
+  task :tail_logs, :roles => :app do
+    trap("INT") { puts 'Interupted'; exit 0; }
+    run "tail -f #{shared_path}/log/production.log" do |channel, stream, data|
+      puts  # for an extra line break before the host name
+      puts "#{channel[:host]}: #{data}"
+      break if stream == :err
+    end
+  end
+end
 
 namespace :onepennymedia do
   task :setup, :roles => :app do

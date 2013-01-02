@@ -82,17 +82,20 @@ nav ul li{margin-left:0;list-style:none;display:inline;line-height:.5em}
 nav ul li.first{margin-left:0;list-style:none;display:inline}nav ul li:before{content:"\0020 \003A \003A \0020";color:#c0c0c0}
 nav ul li.first:before{content:" "}
 h2{font-size:2em}h3{font-size:1.6em}h6{font-size:1em}p{font-size:1.2em;line-height:1.3em}
-.post ul{font-size:1.2em;line-height:1em;padding:0}.post ol{font-size:1.2em;line-height:1em;padding:0}}@media(max-width:600px){.entry{width:100%;float:left;margin:auto}h2{font-size:1.9em}h3{font-size:1.5em}h6{font-size:1em}p{font-size:1.1em;line-height:1em}.post ul{font-size:1.1em;line-height:1em;padding:0}.post ol{font-size:1.1em;line-height:1em;padding:0}}@media(max-width:400px){h2{font-size:1.8em}h3{font-size:1.5em}h6{font-size:1em}p{font-size:1em;line-height:.9em}.post ul{font-size:1em;line-height:.9em;padding:0}.post ol{font-size:1em;line-height:.9em;padding:0}}@media print{body{font-family:Helvetica,sans-serif;font-size:14px;background:white;color:black;margin:10;width:auto}#container{display:block}#navigation{display:none}#alignleft{display:none}#alignright{display:none}#sidebar{display:none}#footer{display:none}}
+.article .content ul{font-size:1.2em;line-height:1em;padding:0}.article .content ol{font-size:1.2em;line-height:1em;padding:0}}@media(max-width:600px){.entry{width:100%;float:left;margin:auto}h2{font-size:1.9em}h3{font-size:1.5em}h6{font-size:1em}p{font-size:1.1em;line-height:1em}.article .content ul{font-size:1.1em;line-height:1em;padding:0}.article .content ol{font-size:1.1em;line-height:1em;padding:0}}@media(max-width:400px){h2{font-size:1.8em}h3{font-size:1.5em}h6{font-size:1em}p{font-size:1em;line-height:.9em}.article .content ul{font-size:1em;line-height:.9em;padding:0}.article .content ol{font-size:1em;line-height:.9em;padding:0}}@media print{body{font-family:Helvetica,sans-serif;font-size:14px;background:white;color:black;margin:10;width:auto}#container{display:block}#navigation{display:none}#alignleft{display:none}#alignright{display:none}#sidebar{display:none}#footer{display:none}}
 
 
-.typo-sidebars ul{
+.typo-sidebars ul, #commentList, .categorylist, #taglist{
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+.categorylist, #taglist{
+  font-size: 1.3em;
 }
 
 .typo-sidebars h3{
   padding-bottom: 0px;
   margin-bottom: 10px;
-  font-size: 21px;
+  font-size: 1.3em;
 }

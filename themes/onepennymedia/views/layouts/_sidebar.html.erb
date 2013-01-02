@@ -3,22 +3,16 @@
   <p id="tagline"><a href="/">description</a></p>
 
   <subscribe>
-    <ul>
-      <li><small>Subscribe: <a href="/articles.rss">rss</a> | <a href="#">email</a> | <a href="#">twitter</a></small></li>
-      <li>
-        <%= form_tag('/search', method: :get) do %>
-          <%= text_field_tag :q, params[:q] %><%= submit_tag 'Search' %>
-        <% end %>
-      </li>
-    </ul>
+    <small>Subscribe: <a href="/articles.rss">rss</a> | <a href="#">email</a> | <a href="#">twitter</a></small>
   </subscribe>
 
-  <nav>
-    <ul>
-      <li><a href="/pages/about/">About</a></li>
-      <li><a href="/archives/">Archives</a></li>
-      <li><a href="/categories/">Categories</a></li>
-      <li><a href="/tags/">Tags</a></li>
-    </ul>
-  <nav>
+  <div>
+    <%= form_tag('/search', method: :get) do %>
+      <%= text_field_tag :q, params[:q] %><%= submit_tag 'Search' %>
+    <% end %>
+  </div>
+
+  <div class="typo-sidebars">
+    <%= render_sidebars %>
+  </div>
 </section>

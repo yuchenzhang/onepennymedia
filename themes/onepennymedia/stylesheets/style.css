@@ -19,12 +19,12 @@ a:hover{color:#999;text-decoration:none;border:0;border-width:0;border-style:non
 #container{overflow:hidden;padding:0 1em;max-width:59.375em;margin:40px auto}
 .entry{width:70%;float:left;margin:auto;margin-top:2em}
 #fullwidth{float:left;padding:5px 5px 5px 5px;width:100%}
-.post a:link{color:#303030;text-decoration:none;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0}
-.post a:visited{color:#303030;text-decoration:none;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0}
-.post a:hover{color:#999;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0;text-decoration:none}
-.post ul{padding:.1em 0 1em 1.3em;font-family:ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;font-size:1.3em;-webkit-font-smoothing: antialiased}
-.post ol{padding:.1em 0 1em 1.3em;font-family:ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;font-size:1.3em;-webkit-font-smoothing: antialiased}.post li{line-height:1.5em;padding:.2em 0 0 0;color:#333}
-.post blockquote{border-left:2px solid #a5abab;margin:1.8em .8em;padding:0 1em 0 1em;color:#666;font-family:Open Sans,Helvetica,sans-serif}
+.article .content a:link{color:#303030;text-decoration:none;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0}
+.article .content a:visited{color:#303030;text-decoration:none;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0}
+.article .content a:hover{color:#999;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0;text-decoration:none}
+.article .content ul{padding:.1em 0 1em 1.3em;font-family:ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;font-size:1.3em;-webkit-font-smoothing: antialiased}
+.article .content ol{padding:.1em 0 1em 1.3em;font-family:ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;font-size:1.3em;-webkit-font-smoothing: antialiased}.article .content li{line-height:1.5em;padding:.2em 0 0 0;color:#333}
+.article .content blockquote{border-left:2px solid #a5abab;margin:1.8em .8em;padding:0 1em 0 1em;color:#666;font-family:Open Sans,Helvetica,sans-serif}
 .home_bottom{border-bottom:1px solid #efefef;font-family:Open Sans,Helvetica,sans-serif;font-size:2em;line-height:2.5em;color:#dedede}
 .navigation{text-transform:uppercase}.navigation p{color:#666!important;font-size:.7em;letter-spacing:.2em;font-family:Open Sans,Helvetica,sans-serif;font-weight:bold;margin-top:1em}
 .navigation a{font-family:Open Sans,Helvetica,sans-serif;font-size:1.1em;color:#666;font-weight:normal;text-transform:none;text-decoration:none!important;letter-spacing:normal}

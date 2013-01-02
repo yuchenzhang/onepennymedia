@@ -1,7 +1,9 @@
-<div id="article-<%= @article.id %>">
+<div class="article" id="article-<%= @article.id %>">
   <h2 class='page-header'><%= link_to_permalink(@article,@article.title) %></h2>
-  <%= @article.html(:body) %>
-  <%= @article.html(:extended) %>
+  <div class="content">
+    <%= @article.html(:body) %>
+    <%= @article.html(:extended) %>
+  </div>
 
   <div class='meta'>
     <p>

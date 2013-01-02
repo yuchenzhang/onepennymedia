@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang=en>
+
+<head profile="http://gmpg.org/xfn/11">
+  <title><%= h(page_title) %></title>
+  <%= stylesheet_link_tag "/stylesheets/theme/style.css", :media => 'all' %>
+  <%= page_header %>
+</head>
+
+<body>
+  <div id="container">
+    <div id="content">
+      <div class="entry">
+        <%= yield %>
+      </div>
+      <%= render 'layouts/sidebar' %>
+    </div>
+  </div>
+  <div id="footer">
+    <p>
+    <a href="#">link</a> :: <a href="#">link</a> :: <a href="#">link</a> :: <a href="#">link</a>
+    </p>
+  </div>
+</body>
+
+</html>

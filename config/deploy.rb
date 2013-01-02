@@ -19,6 +19,18 @@ set :use_sudo, false
 set :default_environment, { 'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH" } # load rbenv for capistrano
 set :bundle_flags, "--deployment --without development test deploy --quiet --binstubs --shebang ruby-local-exec"
 
+namespace :deploy do
+  desc "tail production log files"
+  task :tail_logs, :roles => :app do
+    trap("INT") { puts 'Interupted'; exit 0; }
+    run "tail -f #{shared_path}/log/production.log" do |channel, stream, data|
+      puts  # for an extra line break before the host name
+      puts "#{channel[:host]}: #{data}"
+      break if stream == :err
+    end
+  end
+end
+
 namespace :onepennymedia do
   task :setup, :roles => :app do
     run "mkdir -p #{shared_path}/sqlite3"

@@ -41,7 +41,7 @@ The deploy script will checkedout the codes from Github using your local ssh key
 
 > ssh-add ~/.ssh/id_rsa (or ssh-add ~/.ssh/id_dsa, depending on the key you are using)
 
-4 Login to production server and test the with Github:
+4 Login to production server and test the connection with Github:
 
 > ssh media.onepennyentrepreneur.com
 

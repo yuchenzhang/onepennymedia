@@ -5,7 +5,11 @@
   <subscribe>
     <ul>
       <li><small>Subscribe: <a href="/articles.rss">rss</a> | <a href="#">email</a> | <a href="#">twitter</a></small></li>
-      <li><small>Join 225,000 sexy readers</small></li>
+      <li>
+        <%= form_tag('/search', method: :get) do %>
+          <%= text_field_tag :q, params[:q] %><%= submit_tag 'Search' %>
+        <% end %>
+      </li>
     </ul>
   </subscribe>
 

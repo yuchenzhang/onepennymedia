@@ -126,8 +126,9 @@ register_onload(function() {
     if(_author != null) { $('commentform').elements['comment[author]'].value = _author }
     if(_url != null) { $('commentform').elements['comment[url]'].value = _url }
 
-    if ($('commentform').elements['comment[url]'].value != ''
-        || $('commentform').elements['comment[email]'].value != '') {
+    if ( $('commentform').elements && (
+          $('commentform').elements['comment[url]'].value != ''
+            || $('commentform').elements['comment[email]'].value != '')) {
       Element.show('guest_url'); Element.show('guest_email');
     }
   }

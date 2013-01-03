@@ -202,5 +202,7 @@ label.editor {
 	border-bottom: 1px solid #00438a;
 }
 
-
+.zebra-striped thead{
+	display: block;
+}
 

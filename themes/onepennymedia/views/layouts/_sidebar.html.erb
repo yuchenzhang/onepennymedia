@@ -12,12 +12,6 @@
     <% end %>
   </subscribe>
 
-  <div>
-    <%= form_tag('/search', method: :get) do %>
-      <%= text_field_tag :q, params[:q] %><%= submit_tag 'Search' %>
-    <% end %>
-  </div>
-
   <div class="typo-sidebars">
     <%= render_sidebars %>
   </div>

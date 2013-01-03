@@ -3,7 +3,13 @@
   <p id="tagline"><%= theme_configs[:blog_description] %></p>
 
   <subscribe>
-    <small>Subscribe: <a href="/articles.rss">rss</a> | <a href="#">email</a> | <a href="#">twitter</a></small>
+    <small>Subscribe: <a href="/articles.rss">rss</a>
+    <% if theme_configs[:contact][:email].present? %>
+      | <a href="<%= theme_configs[:contact][:email] %>">email</a>
+    <% end %>
+    <% if theme_configs[:contact][:twitter].present? %>
+      | <a href="<%= theme_configs[:contact][:twitter] %>">twitter</a>
+    <% end %>
   </subscribe>
 
   <div>

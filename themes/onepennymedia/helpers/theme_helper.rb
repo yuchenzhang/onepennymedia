@@ -46,3 +46,11 @@ end
 def theme_configs
   @theme_configs ||= YAML.load_file("config/theme.yml").deep_symbolize_keys
 end
+
+def theme_page_title
+  case page_title
+  # Typo didn't prepare proper page title for tag and category index pages, so here we made some compensation.
+  when 'Tags', 'Categories' then "#{@page_title} for #{this_blog.blog_name}"
+  else page_title
+  end
+end

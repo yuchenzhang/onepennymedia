@@ -16,7 +16,7 @@ img a{border:0}p{line-height:1.45em!important;margin:0 0 10px 0;text-indent:0;fo
 a:link{color:#333;text-decoration:none;border-width:0;border-style:none}
 a:visited{color:#333;text-decoration:none;border:0;border-width:0;border-style:none}
 a:hover{color:#999;text-decoration:none;border:0;border-width:0;border-style:none}
-#container{overflow:hidden;padding:0 1em;max-width:59.375em;margin:40px auto}
+#container{overflow:hidden;padding:0 1em;width:980px;margin:40px auto}
 .entry{width:70%;float:left;margin:auto;margin-top:2em}
 #fullwidth{float:left;padding:5px 5px 5px 5px;width:100%}
 .article .content a:link{color:#303030;text-decoration:none;border-width:0 0 1px 0;border-style:none none solid none;border-color:#c0c0c0}
@@ -31,9 +31,8 @@ a:hover{color:#999;text-decoration:none;border:0;border-width:0;border-style:non
 .all_posts{font-size:2.4em;font-weight:bold;height:48px;line-height:48px}
 .all_posts a{color:#d3d3d3}
 .all_posts a:visited{color:#d3d3d3}.all_posts a:hover{color:#666}
-
 #sidebar{
-  float:right;width:24.291498%;padding-top:35px;
+  float:right;width:24.3%;padding-top:35px;
 }
 
 subscribe ul{float:left;list-style:none inside;font-size:1em;padding:0;margin:0 0 40px 0}
@@ -56,7 +55,7 @@ nav ul li{padding:0;line-height:1.7em}nav ul li a{color:#666}
 .arc2 {color:#999; font-family: Open Sans, sans-serif; font-size: 1em; font-weight: normal !important;}
 .arc2 th {color:#999; font-family: Open Sans,sans-serif;font-size:1em;font-weight:normal!important}}
 
-@media(max-width:800px){section#sidebar{float:none;width:auto}h1{position:absolute;top:0;width:100%}p#tagline{position:absolute;top:5px;width:100%;margin:auto}.entry{width:80%;float:left;margin:auto;padding-top:35px}
+@media(max-width:800px){#sidebar{float:none;width:auto}h1{position:absolute;top:0;width:100%}p#tagline{position:absolute;top:5px;width:100%;margin:auto}.entry{width:80%;float:left;margin:auto;padding-top:35px}
 subscribe ul{margin-top:4em}
 nav ul{margin-left:0;padding-left:0;display:inline;text-transform:lowercase;color:#c0c0c0;letter-spacing:.2em;font-size:.8em}
 nav ul li{margin-left:0;list-style:none;display:inline;line-height:.5em}

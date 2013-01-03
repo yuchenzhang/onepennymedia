@@ -1,3 +1,4 @@
+
 /* General */
 
 body {
@@ -27,7 +28,9 @@ table.clearfix {
 }
 
 footer {
+	margin-left: 200px;
   clear: both;
+  text-align: center;
 }
 
 .container-fluid .sidebar {
@@ -40,20 +43,20 @@ footer {
 
 /* Dashboard */
 
-.dashboard-left { 
-  width: 49%; 
-  float: left; 
+.dashboard-left {
+  width: 49%;
+  float: left;
 }
 
 .dashboard {
-    width: 49%; 
-    margin-left: 51%; 
+    width: 49%;
+    margin-left: 51%;
 }
 
 /* Tags, categories, post types... */
 .left_form {
-	float: left; 
-	width: 380px; 
+	float: left;
+	width: 380px;
 	padding-top: 18px;
 }
 
@@ -64,7 +67,7 @@ footer {
 
 /* Editor */
 #editor {
-	float: left; 
+	float: left;
 	width: 100%;
 }
 
@@ -128,8 +131,8 @@ footer {
 }
 
 #visual_editor {
-	width: 100%; 
-	float: left; 
+	width: 100%;
+	float: left;
 	display: block;
 }
 
@@ -139,7 +142,7 @@ span.cke_skin_kama {
 }
 
 label.editor {
-  margin-left: 0; 
+  margin-left: 0;
   padding-left:0;
 }
 
@@ -176,7 +179,7 @@ label.editor {
 	margin-left: 100px;
 }
 
-#active .span4 { 
+#active .span4 {
 	width: 255px;
 }
 
@@ -199,5 +202,7 @@ label.editor {
 	border-bottom: 1px solid #00438a;
 }
 
-
+.zebra-striped thead{
+	display: block;
+}
 

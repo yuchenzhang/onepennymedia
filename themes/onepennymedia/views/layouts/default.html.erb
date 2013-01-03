@@ -2,7 +2,7 @@
 <html lang=en>
 
 <head profile="http://gmpg.org/xfn/11">
-  <title><%= h(page_title) %></title>
+  <title><%= h(theme_page_title) %></title>
   <%= stylesheet_link_tag "/stylesheets/theme/style.css", :media => 'all' %>
   <%= page_header %>
 </head>
@@ -16,11 +16,6 @@
       <%= render 'layouts/sidebar' %>
     </div>
   </div>
-  <div id="footer">
-    <p>
-    <a href="#">link</a> :: <a href="#">link</a> :: <a href="#">link</a> :: <a href="#">link</a>
-    </p>
-  </div>
+  <%= render 'layouts/footer' %>
 </body>
-
 </html>

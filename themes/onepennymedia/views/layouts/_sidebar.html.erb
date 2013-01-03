@@ -1,16 +1,16 @@
 <div id='sidebar' class='span4'>
-  <h1><a href="/">blog title</a></h1>
-  <p id="tagline"><a href="/">description</a></p>
+  <h1><a href="/"><%= theme_configs[:blog_title] %></a></h1>
+  <p id="tagline"><%= theme_configs[:blog_description] %></p>
 
   <subscribe>
-    <small>Subscribe: <a href="/articles.rss">rss</a> | <a href="#">email</a> | <a href="#">twitter</a></small>
-  </subscribe>
-
-  <div>
-    <%= form_tag('/search', method: :get) do %>
-      <%= text_field_tag :q, params[:q] %><%= submit_tag 'Search' %>
+    <small>Subscribe: <a href="/articles.rss">rss</a>
+    <% if theme_configs[:contact][:email].present? %>
+      | <a href="<%= theme_configs[:contact][:email] %>">email</a>
     <% end %>
-  </div>
+    <% if theme_configs[:contact][:twitter].present? %>
+      | <a href="<%= theme_configs[:contact][:twitter] %>">twitter</a>
+    <% end %>
+  </subscribe>
 
   <div class="typo-sidebars">
     <%= render_sidebars %>

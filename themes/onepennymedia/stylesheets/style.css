@@ -1,11 +1,11 @@
 @media all{
 body{font:normal 100% Open Sans,Helvetica,sans-serif;background-color:#fff;color:#000;padding:10px; -webkit-font-smoothing: antialiased}
-h1{font-size:280%;font-weight:normal;padding:0;margin:.8em 0 0 0;color:#d3d3d3;letter-spacing:.7px;line-height:18px}
+h1{font-size:280%;font-weight:normal;padding:0;color:#d3d3d3;letter-spacing:.7px;line-height:18px}
 h1 a:link{color:#d3d3d3;text-decoration:none;border-style:none}
 h1 a:visited{color:#d3d3d3;text-decoration:none;border-style:none}
-#tagline{padding:0;font-size:100%;color:#56a49f;letter-spacing:12px;font-family:Open Sans,Helvetica,sans-serif;margin-top:.5em;margin-bottom:5em}
-#tagline a:link{padding:0;font-size:115%;color:#56a49f;letter-spacing:12px}
-#tagline a:visited{padding:0;font-size:115%;color:#56a49f;letter-spacing:12px}
+#tagline{padding:0;font-size:100%;color:#56a49f;font-family:Open Sans,Helvetica,sans-serif;margin-top:.5em;margin-bottom:5em}
+#tagline a:link{padding:0;font-size:115%;color:#56a49f;}
+#tagline a:visited{padding:0;font-size:115%;color:#56a49f;}
 h2{font-family:Open Sans,Helvetica,sans-serif;font-size:2.2em;color:#333;font-weight:normal;margin-top:1em}
 h3{font-family:Open Sans,Helvetica,sans-serif;font-size:1.8em;color:#666;font-weight:normal;line-height:1em;margin-top:1.5em}h4{font-family:Georgia,"Times New Roman",Times,serif;font-size:1em;color:#000}
 h5{font-size:.7em;color:#666;font-family:Open Sans,Helvetica,sans-serif;font-weight:bold;letter-spacing:.2em;line-height:.2em}
@@ -44,7 +44,7 @@ nav ul li{padding:0;line-height:1.7em}nav ul li a{color:#666}
 
 #footer{overflow:hidden;padding:0 1em;max-width:59.375em;margin:40px auto}
 #footer p{padding:4px 0;margin:0;color:#c0c0c0;font-size:.8em;font-family:Open Sans,Helvetica,sans-serif;letter-spacing:.2em}
-#footer a{color:#c0c0c0}
+#footer a{color:#888}
 #footer a:hover{color:#999}.search{margin-top:1em}
 
 #arc{float:left;overflow:hidden;margin-top:0;margin-left:5px;margin-right:14px;margin-bottom:24px}

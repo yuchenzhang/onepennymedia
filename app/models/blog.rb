@@ -24,12 +24,12 @@ class Blog < ActiveRecord::Base
 
   # Description
   setting :blog_name,                  :string, 'My Shiny Weblog!'
-  setting :blog_subtitle,              :string, ''
+  setting :blog_subtitle,              :string, 'Sub title'
   setting :geourl_location,            :string, ''
   setting :canonical_server_url,       :string, ''  # Deprecated
   setting :lang,                       :string, 'en_US'
   setting :title_prefix,               :integer, 0 # Deprecated but needed for a migration
-  
+
   # Spam
   setting :sp_global,                  :boolean, false
   setting :sp_article_auto_close,      :integer, 0
@@ -104,7 +104,7 @@ class Blog < ActiveRecord::Base
 # Error handling
   setting :title_error_404,            :string, "Page not found"
   setting :msg_error_404,              :string, "<p>The page you are looking for has moved or does not exist.</p>"
-  
+
   validate :permalink_has_identifier
 
   def initialize(*args)

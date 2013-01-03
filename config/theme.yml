@@ -5,3 +5,9 @@ blog_description: A web media reporting about web/app startups in Hangzhou.
 contact:
   email: 'mailto:shaoshing@me.com'
   twitter: 'http://twitter.com/shaoshing'
+footer:
+  links:
+    'About': '/pages/about'
+    'Contact': '/pages/contact'
+    'One Penny Entrepreneur EN': 'http://www.onepennyentrepreneur.com'
+    'CN': 'https://www.yifency.com'

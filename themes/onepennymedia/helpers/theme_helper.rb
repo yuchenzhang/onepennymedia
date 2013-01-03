@@ -42,3 +42,7 @@ def show_pages_links
   end
   html
 end
+
+def theme_configs
+  @theme_configs ||= YAML.load_file("config/theme.yml").deep_symbolize_keys
+end

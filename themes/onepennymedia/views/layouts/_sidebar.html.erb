@@ -3,13 +3,11 @@
   <p id="tagline"><%= theme_configs[:blog_description] %></p>
 
   <subscribe>
-    <small>Subscribe: <a href="/articles.rss">rss</a>
-    <% if theme_configs[:contact][:email].present? %>
-      | <a href="<%= theme_configs[:contact][:email] %>">email</a>
-    <% end %>
-    <% if theme_configs[:contact][:twitter].present? %>
-      | <a href="<%= theme_configs[:contact][:twitter] %>">twitter</a>
-    <% end %>
+    <small>Subscribe:
+    <%= theme_configs[:subscribe][:links].collect{ |data|
+      name, url = data
+      %{<a href="#{url}">#{name}</a>}
+    }.join(' | ')%>
   </subscribe>
 
   <div class="typo-sidebars">

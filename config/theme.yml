@@ -2,9 +2,11 @@
 
 blog_title: One Penny
 blog_description: A web media reporting about web/app startups in Hangzhou.
-contact:
-  email: 'mailto:shaoshing@me.com'
-  twitter: 'http://twitter.com/shaoshing'
+subscribe:
+  links:
+    'rss': 'http://feeds.feedburner.com/OnePennyMedia'
+    'email': 'mailto:shaoshing@me.com'
+    'twitter': 'http://twitter.com/shaoshing'
 footer:
   links:
     'About': '/pages/about'

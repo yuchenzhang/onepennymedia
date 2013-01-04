@@ -186,45 +186,6 @@
     margin: 1.8em .8em;
     padding: 0 1em 0 1em;
   }
-  .home_bottom {
-    border-bottom: 1px solid #efefef;
-    color: #dedede;
-    font-size: 2em;
-    line-height: 2.5em;
-  }
-  .navigation {
-    text-transform: uppercase;
-  }
-  .navigation p {
-    color: #666;
-    font-size: .7em;
-    font-weight: bold;
-    letter-spacing: .2em;
-    margin-top: 1em;
-  }
-  .navigation a {
-    color: #666;
-    font-size: 1.1em;
-    font-weight: normal;
-    letter-spacing: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  .all_posts {
-    font-size: 2.4em;
-    font-weight: bold;
-    height: 48px;
-    line-height: 48px;
-  }
-  .all_posts a {
-    color: #d3d3d3;
-  }
-  .all_posts a:visited {
-    color: #d3d3d3;
-  }
-  .all_posts a:hover {
-    color: #666;
-  }
   #sidebar, #logo {
     float: right;
     padding-top: 35px;

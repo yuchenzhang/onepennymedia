@@ -1,0 +1,10 @@
+<div id="logo">
+  <h1><a href="/"><%= theme_configs[:blog_title] %></a></h1>
+  <p id="tagline"><%= theme_configs[:blog_description] %></p>
+</div>
+<div id="mobile-nav">
+  <%= theme_configs[:mobile_navigation][:links].collect{ |data|
+    name, url = data
+    %{<a href="#{url}">#{name}</a>}
+  }.join(' :: ')%>
+</div>

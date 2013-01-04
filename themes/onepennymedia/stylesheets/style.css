@@ -96,7 +96,7 @@ html {
     color: #333;
     font-family: ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 1.3em;
-    line-height: 1.45em!important;
+    line-height: 1.45em;
     margin: 0 0 10px 0;
     text-indent: 0;
     -webkit-font-smoothing: antialiased;
@@ -192,7 +192,7 @@ html {
     text-transform: uppercase;
   }
   .navigation p {
-    color: #666!important;
+    color: #666;
     font-size: .7em;
     font-weight: bold;
     letter-spacing: .2em;
@@ -203,7 +203,7 @@ html {
     font-size: 1.1em;
     font-weight: normal;
     letter-spacing: normal;
-    text-decoration: none!important;
+    text-decoration: none;
     text-transform: none;
   }
   .all_posts {
@@ -296,7 +296,7 @@ html {
     color: #666;
     font-family: Verdana, sans-serif;
     font-size: 1em;
-    font-weight: normal !important;
+    font-weight: normal;
   }
   .year th {
     color: #666;
@@ -319,12 +319,12 @@ html {
   .arc2 {
     color: #999;
     font-size: 1em;
-    font-weight: normal !important;
+    font-weight: normal;
   }
   .arc2 th {
     color: #999;
     font-size: 1em;
-    font-weight: normal!important;
+    font-weight: normal;
   }
 }
 @media(max-width:800px) {

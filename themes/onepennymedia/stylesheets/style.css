@@ -1,12 +1,12 @@
-html {
-  font-family: Helvetica Neue, Arial, Verdana, sans-serif;
-}
-
-h1, h2{
-  font-family: Georgia,Times,serif;
-}
-
 @media all {
+  html {
+    font-family: Helvetica Neue, Arial, Verdana, sans-serif;
+  }
+
+  h1, h2{
+    font-family: Georgia,Times,serif;
+  }
+
   body {
     background-color: #fff;
     color: #000;
@@ -291,10 +291,7 @@ h1, h2{
   }
   #arc {
     float: left;
-    margin-bottom: 24px;
-    margin-left: 5px;
-    margin-right: 14px;
-    margin-top: 0;
+    margin: 0 14px 24px 5px;
     overflow: hidden;
   }
   .arc p {
@@ -338,7 +335,7 @@ h1, h2{
     top: 0;
     width: 100%;
   }
-  p#tagline {
+  #tagline {
     margin: auto;
     position: absolute;
     top: 5px;

@@ -13,3 +13,8 @@ footer:
     'Contact': '/pages/contact'
     'One Penny Entrepreneur EN': 'http://www.onepennyentrepreneur.com'
     'CN': 'https://www.yifency.com'
+mobile_navigation: # Navigation displayed under the log for small screens, like iPhone.
+  links:
+    'Archives': '/archives'
+    'Categories': '/categories'
+    'Tags': '/tags'

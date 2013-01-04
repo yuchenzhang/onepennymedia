@@ -35,7 +35,6 @@
   #tagline {
     color: #56a49f;
     font-size: 100%;
-    margin-bottom: 5em;
     margin-top: .5em;
     padding: 0;
   }
@@ -226,10 +225,13 @@
   .all_posts a:hover {
     color: #666;
   }
-  #sidebar {
+  #sidebar, #logo {
     float: right;
     padding-top: 35px;
     width: 24.3%;
+  }
+  #mobile-nav{
+    display:none;
   }
   subscribe ul {
     float: left;
@@ -323,6 +325,38 @@
     color: #999;
     font-size: 1em;
     font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    min-width: 400px;
+  }
+  #logo, .entry{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  #sidebar{
+    display: none;
+  }
+  #logo {
+    padding-top: 0;
+    text-align: center;
+  }
+  #container {
+    margin: 0;
+    padding: 0;
+  }
+  #mobile-nav{
+    display: block;
+    text-align: center;
   }
 }
 

@@ -2,6 +2,10 @@ html {
   font-family: Helvetica Neue, Arial, Verdana, sans-serif;
 }
 
+h1, h2{
+  font-family: Georgia,Times,serif;
+}
+
 @media all {
   body {
     background-color: #fff;
@@ -30,7 +34,6 @@ html {
   }
   #tagline {
     color: #56a49f;
-    font-family: "Helvetica Neue",Arial,Verdana,sans-serif;
     font-size: 100%;
     margin-bottom: 5em;
     margin-top: .5em;
@@ -48,7 +51,6 @@ html {
   }
   h2 {
     color: #333;
-    font-family: Helvetica Neue, Arial, Verdana, sans-serif;
     font-size: 2.2em;
     font-weight: normal;
     margin-top: 1em;
@@ -62,7 +64,6 @@ html {
   }
   h4 {
     color: #000;
-    font-family: Georgia,"Times New Roman",Times,serif;
     font-size: 1em;
   }
   h5 {
@@ -94,7 +95,6 @@ html {
   }
   p {
     color: #333;
-    font-family: ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 1.3em;
     line-height: 1.45em;
     margin: 0 0 10px 0;
@@ -138,6 +138,13 @@ html {
     padding: 5px 5px 5px 5px;
     width: 100%;
   }
+
+  .article .page-header{
+    font-family: Georgia,Times,serif;
+  }
+  .article h1, .article h2, .article h3, .article h4{
+    font-family: Helvetica Neue, Arial, Verdana, sans-serif;
+  }
   .article .content a:link {
     border-color: #c0c0c0;
     border-style: none none solid none;
@@ -160,13 +167,11 @@ html {
     text-decoration: none;
   }
   .article .content ul {
-    font-family: ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 1.3em;
     padding: .1em 0 1em 1.3em;
     -webkit-font-smoothing: antialiased;
   }
   .article .content ol {
-    font-family: ff-meta-serif-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 1.3em;
     padding: .1em 0 1em 1.3em;
     -webkit-font-smoothing: antialiased;
@@ -294,25 +299,21 @@ html {
   }
   .arc p {
     color: #666;
-    font-family: Verdana, sans-serif;
     font-size: 1em;
     font-weight: normal;
   }
   .year th {
     color: #666;
-    font-family: Verdana, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
   }
   .arctitle {
     color: #666;
-    font-family: Verdana,sans-serif;
     font-size: 1em;
     font-weight: normal;
   }
   .arctitle th {
     color: #999;
-    font-family: Verdana, sans-serif;
     font-size: 1.2em;
     font-weight: normal;
   }
@@ -462,7 +463,6 @@ html {
   body {
     background: white;
     color: black;
-    font-family: Helvetica,sans-serif;
     font-size: 14px;
     margin: 10px;
     width: auto;

@@ -15,6 +15,7 @@ footer:
     'CN': 'https://www.yifency.com'
 mobile_navigation: # Navigation displayed under the log for small screens, like iPhone.
   links:
+    'Home': '/'
     'Archives': '/archives'
     'Categories': '/categories'
     'Tags': '/tags'

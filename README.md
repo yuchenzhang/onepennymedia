@@ -21,6 +21,11 @@ One Penny Media is based on the blogging engine called: [Typo](https://github.co
 
 > open http://localhost:3000
 
+### The One Penny Theme
+
+One Penny Media is using a custom theme located at themes/onepennymedia. Most of the customization work will take place there.
+Please read theme/boostrap/README.md about how a theme was organized before started.
+
 ## deployment
 
 ### Setup
@@ -52,6 +57,10 @@ The deploy script will checkedout the codes from Github using your local ssh key
 5 Done, you are ready to deploy your code.
 
 ### Deploy
+
+The deploy script will checkout code from 'production' branch, so you should merge the master branch to production branch before deploying:
+
+> git checkout production && git merge --no-ff master && git push
 
 > cap deploy
 

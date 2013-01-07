@@ -1,12 +1,4 @@
 <div id='sidebar'>
-  <subscribe>
-    <small>Subscribe:
-    <%= theme_configs[:subscribe][:links].collect{ |data|
-      name, url = data
-      %{<a href="#{url}">#{name}</a>}
-    }.join(' | ')%>
-  </subscribe>
-
   <div class="typo-sidebars">
     <%= render_sidebars %>
 

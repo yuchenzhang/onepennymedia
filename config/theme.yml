@@ -2,15 +2,11 @@
 
 blog_title: One Penny
 blog_description: A web media reporting about web/app startups in Hangzhou.
-subscribe:
-  links:
-    'rss': 'http://feeds.feedburner.com/OnePennyMedia'
-    'email': 'mailto:shaoshing@me.com'
-    'twitter': 'http://twitter.com/shaoshing'
 footer:
   links:
     'About': '/pages/about'
-    'Contact': '/pages/contact'
+    'Contact': 'mailto:shaoshing@me.com'
+    'RSS': 'http://feeds.feedburner.com/OnePennyMedia'
     'One Penny Entrepreneur EN': 'http://www.onepennyentrepreneur.com'
     'CN': 'https://www.yifency.com'
 mobile_navigation: # Navigation displayed under the log for small screens, like iPhone.

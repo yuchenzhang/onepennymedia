@@ -1,371 +1,384 @@
 @media all {
+  /* line 5, style.sass */
   html {
-    font-family: Helvetica Neue, Arial, Verdana, sans-serif;
-  }
+    font-family: Helvetica Neue, Arial, Verdana, sans-serif; }
 
-  h1, h2{
-    font-family: Georgia,Times,serif;
-  }
-
+  /* line 8, style.sass */
   body {
-    background-color: #fff;
-    color: #000;
+    background-color: white;
+    color: black;
     font: normal 100%;
     padding: 10px;
-    -webkit-font-smoothing: antialiased;
-  }
+    -webkit-font-smoothing: antialiased; }
+
+  /* line 15, style.sass */
+  h1, h2 {
+    font-family: Georgia, Times, serif; }
+
+  /* line 18, style.sass */
   h1 {
-    color: #d3d3d3;
+    color: lightgrey;
     font-size: 280%;
     font-weight: normal;
-    letter-spacing: .7px;
-    padding: 0;
-  }
-  h1 a:link {
-    border-style: none;
-    color: #d3d3d3;
-    text-decoration: none;
-  }
-  h1 a:visited {
-    border-style: none;
-    color: #d3d3d3;
-    text-decoration: none;
-  }
+    letter-spacing: 0.7px;
+    padding: 0; }
+    /* line 24, style.sass */
+    h1 a:link {
+      border-style: none;
+      color: lightgrey;
+      text-decoration: none; }
+    /* line 28, style.sass */
+    h1 a:visited {
+      border-style: none;
+      color: lightgrey;
+      text-decoration: none; }
+
+  /* line 33, style.sass */
   #tagline {
     color: #56a49f;
     font-size: 100%;
-    margin-top: .5em;
-    padding: 0;
-  }
-  #tagline a:link {
-    color: #56a49f;
-    font-size: 115%;
-    padding: 0;
-  }
-  #tagline a:visited {
-    color: #56a49f;
-    font-size: 115%;
-    padding: 0;
-  }
+    margin-top: 0.5em;
+    padding: 0; }
+    /* line 38, style.sass */
+    #tagline a:link {
+      color: #56a49f;
+      font-size: 115%;
+      padding: 0; }
+    /* line 42, style.sass */
+    #tagline a:visited {
+      color: #56a49f;
+      font-size: 115%;
+      padding: 0; }
+
+  /* line 47, style.sass */
   h2 {
-    color: #333;
+    color: #333333;
     font-size: 2.2em;
     font-weight: normal;
-    margin-top: 1em;
-  }
+    margin-top: 1em; }
+
+  /* line 53, style.sass */
   h3 {
-    color: #666;
+    color: #666666;
     font-size: 1.8em;
     font-weight: normal;
     line-height: 1em;
-    margin-top: 1.5em;
-  }
+    margin-top: 1.5em; }
+
+  /* line 60, style.sass */
   h4 {
-    color: #000;
-    font-size: 1em;
-  }
+    color: black;
+    font-size: 1em; }
+
+  /* line 64, style.sass */
   h5 {
-    color: #666;
-    font-size: .7em;
+    color: #666666;
+    font-size: 0.7em;
     font-weight: bold;
-    letter-spacing: .2em;
-    line-height: .2em;
-  }
+    letter-spacing: 0.2em;
+    line-height: 0.2em; }
+
+  /* line 71, style.sass */
   h6 {
-    color: #666;
+    color: #666666;
     font-size: 1.2em;
     font-weight: normal;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     line-height: 1.5em;
     margin: 0 0 10px 0;
-    margin-bottom: 1em;
-  }
-  h6 strong {
-    color: #56a49f;
-    font-weight: bold;
-  }
+    margin-bottom: 1em; }
+    /* line 79, style.sass */
+    h6 strong {
+      color: #56a49f;
+      font-weight: bold; }
+
+  /* line 83, style.sass */
   img {
     border: 0;
-    padding: 3px;
-  }
-  img a {
-    border: 0;
-  }
+    padding: 3px; }
+    /* line 86, style.sass */
+    img a {
+      border: 0; }
+
+  /* line 89, style.sass */
   p {
-    color: #333;
+    color: #333333;
     font-size: 1.3em;
     line-height: 1.45em;
     margin: 0 0 10px 0;
     text-indent: 0;
-    -webkit-font-smoothing: antialiased;
-  }
+    -webkit-font-smoothing: antialiased; }
+
+  /* line 97, style.sass */
   a:link {
     border-style: none;
     border-width: 0;
-    color: #333;
-    text-decoration: none;
-  }
+    color: #333333;
+    text-decoration: none; }
+
+  /* line 102, style.sass */
   a:visited {
     border: 0;
     border-style: none;
     border-width: 0;
-    color: #333;
-    text-decoration: none;
-  }
+    color: #333333;
+    text-decoration: none; }
+
+  /* line 108, style.sass */
   a:hover {
     border: 0;
     border-style: none;
     border-width: 0;
-    color: #999;
-    text-decoration: none;
-  }
+    color: #999999;
+    text-decoration: none; }
+
+  /* line 115, style.sass */
   #container {
     margin: 40px auto;
     overflow: hidden;
     padding: 0 1em;
-    width: 980px;
-  }
+    width: 980px; }
+
+  /* line 121, style.sass */
   .entry {
     float: left;
     margin: auto;
     margin-top: 2em;
-    width: 70%;
-  }
+    width: 70%; }
+
+  /* line 127, style.sass */
   #fullwidth {
     float: left;
     padding: 5px 5px 5px 5px;
-    width: 100%;
-  }
+    width: 100%; }
 
-  .article .page-header{
-    font-family: Georgia,Times,serif;
-  }
-  .article h1, .article h2, .article h3, .article h4{
-    font-family: Helvetica Neue, Arial, Verdana, sans-serif;
-  }
+  /* line 134, style.sass */
+  .article h1, .article h2, .article h3, .article h4 {
+    font-family: Helvetica Neue, Arial, Verdana, sans-serif; }
+  /* line 136, style.sass */
+  .article .page-header {
+    font-family: Georgia, Times, serif; }
+  /* line 139, style.sass */
   .article .content a:link {
-    border-color: #c0c0c0;
+    border-color: silver;
     border-style: none none solid none;
     border-width: 0 0 1px 0;
     color: #303030;
-    text-decoration: none;
-  }
+    text-decoration: none; }
+  /* line 145, style.sass */
   .article .content a:visited {
-    border-color: #c0c0c0;
+    border-color: silver;
     border-style: none none solid none;
     border-width: 0 0 1px 0;
     color: #303030;
-    text-decoration: none;
-  }
+    text-decoration: none; }
+  /* line 151, style.sass */
   .article .content a:hover {
-    border-color: #c0c0c0;
+    border-color: silver;
     border-style: none none solid none;
     border-width: 0 0 1px 0;
-    color: #999;
-    text-decoration: none;
-  }
+    color: #999999;
+    text-decoration: none; }
+  /* line 157, style.sass */
   .article .content ul {
     font-size: 1.3em;
-    padding: .1em 0 1em 1.3em;
-    -webkit-font-smoothing: antialiased;
-  }
+    padding: 0.1em 0 1em 1.3em;
+    -webkit-font-smoothing: antialiased; }
+  /* line 161, style.sass */
   .article .content ol {
     font-size: 1.3em;
-    padding: .1em 0 1em 1.3em;
-    -webkit-font-smoothing: antialiased;
-  }
+    padding: 0.1em 0 1em 1.3em;
+    -webkit-font-smoothing: antialiased; }
+  /* line 165, style.sass */
   .article .content li {
-    color: #333;
+    color: #333333;
     line-height: 1.5em;
-    padding: .2em 0 0 0;
-  }
+    padding: 0.2em 0 0 0; }
+  /* line 169, style.sass */
   .article .content blockquote {
     border-left: 2px solid #a5abab;
-    color: #666;
-    margin: 1.8em .8em;
-    padding: 0 1em 0 1em;
-  }
+    color: #666666;
+    margin: 1.8em 0.8em;
+    padding: 0 1em 0 1em; }
+
+  /* line 175, style.sass */
   #sidebar, #logo {
     float: right;
     padding-top: 35px;
-    width: 24.3%;
-  }
-  #logo img{
-    margin-top: 1em;
-  }
-  #mobile-nav{
-    display:none;
-  }
+    width: 24.3%; }
+
+  /* line 180, style.sass */
+  #logo img {
+    margin-top: 1em; }
+
+  /* line 183, style.sass */
+  #mobile-nav {
+    display: none; }
+
+  /* line 187, style.sass */
   subscribe ul {
     float: left;
     font-size: 1em;
     list-style: none inside;
     margin: 0 0 40px 0;
-    padding: 0;
-  }
-  subscribe ul li {
-    line-height: 18px;
-    padding: 0;
-  }
+    padding: 0; }
+    /* line 193, style.sass */
+    subscribe ul li {
+      line-height: 18px;
+      padding: 0; }
+  /* line 196, style.sass */
   subscribe a:link {
-    color: #56a49f;
-  }
+    color: #56a49f; }
+  /* line 198, style.sass */
   subscribe a:visited {
-    color: #56a49f;
-  }
+    color: #56a49f; }
+  /* line 200, style.sass */
   subscribe a:hover {
-    color: #999;
-  }
-  nav ul {
-    clear: both;
-    color: #333;
-    float: left;
-    font-size: .9em;
-    list-style: none inside;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    line-height: 1.7em;
-    padding: 0;
-  }
-  nav ul li a {
-    color: #666;
-  }
+    color: #999999; }
+
+  /* line 203, style.sass */
   #footer {
     margin: 40px auto;
     max-width: 59.375em;
     overflow: hidden;
-    padding: 0 1em;
-  }
-  #footer p {
-    color: #c0c0c0;
-    font-size: .8em;
-    letter-spacing: .2em;
-    margin: 0;
-    padding: 4px 0;
-  }
-  #footer a {
-    color: #888;
-  }
-  #footer a:hover {
-    color: #999;
-  }
-  .search {
-    margin-top: 1em;
-  }
+    padding: 0 1em; }
+    /* line 208, style.sass */
+    #footer p {
+      color: silver;
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      margin: 0;
+      padding: 4px 0; }
+    /* line 214, style.sass */
+    #footer a {
+      color: #888888; }
+    /* line 216, style.sass */
+    #footer a:hover {
+      color: #999999; }
+
+  /* line 219, style.sass */
   #arc {
     float: left;
     margin: 0 14px 24px 5px;
-    overflow: hidden;
-  }
+    overflow: hidden; }
+
+  /* line 224, style.sass */
   .arc p {
-    color: #666;
+    color: #666666;
     font-size: 1em;
-    font-weight: normal;
-  }
+    font-weight: normal; }
+
+  /* line 229, style.sass */
   .year th {
-    color: #666;
+    color: #666666;
     font-size: 1.5em;
-    font-weight: bold;
-  }
+    font-weight: bold; }
+
+  /* line 234, style.sass */
   .arctitle {
-    color: #666;
+    color: #666666;
     font-size: 1em;
-    font-weight: normal;
-  }
+    font-weight: normal; }
+
+  /* line 239, style.sass */
   .arctitle th {
-    color: #999;
+    color: #999999;
     font-size: 1.2em;
-    font-weight: normal;
-  }
+    font-weight: normal; }
+
+  /* line 244, style.sass */
   .arc2 {
-    color: #999;
+    color: #999999;
     font-size: 1em;
-    font-weight: normal;
-  }
+    font-weight: normal; }
+
+  /* line 249, style.sass */
   .arc2 th {
-    color: #999;
+    color: #999999;
     font-size: 1em;
-    font-weight: normal;
-  }
-}
+    font-weight: normal; }
 
+  /* line 254, style.sass */
+  .typo-sidebars ul, #commentList, .categorylist, #taglist {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+  /* line 259, style.sass */
+  .categorylist, #taglist {
+    font-size: 1.3em; }
+
+  /* line 262, style.sass */
+  .typo-sidebars h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    padding-bottom: 0; } }
 @media screen and (max-width: 980px) {
+  /* line 270, style.sass */
   #container {
-    width: 100%;
-  }
-  h2{ font-size: 1.8em; }
-  h3{ font-size: 1.5em; }
-  p, .article .content ul, .article .content ol{ font-size: 1em; }
-}
+    width: 100%; }
 
+  /* line 273, style.sass */
+  h2 {
+    font-size: 1.8em; }
+
+  /* line 275, style.sass */
+  h3 {
+    font-size: 1.5em; }
+
+  /* line 277, style.sass */
+  p, .article .content ul, .article .content ol {
+    font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  h2{ font-size: 1.5em; }
-  h3{ font-size: 1.3em; }
+  /* line 283, style.sass */
+  h2 {
+    font-size: 1.5em; }
 
+  /* line 285, style.sass */
+  h3 {
+    font-size: 1.3em; }
+
+  /* line 288, style.sass */
   #container {
-    width: 100%;
-  }
-  #logo, .entry{
+    width: 100%; }
+
+  /* line 291, style.sass */
+  #logo, .entry {
     display: block;
     float: none;
-    width: 100%;
-  }
-  #sidebar{
-    display: none;
-  }
+    width: 100%; }
+
+  /* line 296, style.sass */
+  #sidebar {
+    display: none; }
+
+  /* line 299, style.sass */
   #logo {
     padding-top: 0;
-    text-align: center;
-  }
+    text-align: center; }
+
+  /* line 303, style.sass */
   #container {
     margin: 0;
-    padding: 0;
-  }
-  #mobile-nav{
-    display: block;
-    text-align: center;
-  }
-}
+    padding: 0; }
 
+  /* line 307, style.sass */
+  #mobile-nav {
+    display: block;
+    text-align: center; } }
 @media print {
+  /* line 314, style.sass */
   body {
     background: white;
     color: black;
     font-size: 14px;
     margin: 10px;
-    width: auto;
-  }
+    width: auto; }
+
+  /* line 321, style.sass */
   #container {
-    display: block;
-  }
-  #navigation {
-    display: none;
-  }
-  #alignleft {
-    display: none;
-  }
-  #alignright {
-    display: none;
-  }
-  #sidebar {
-    display: none;
-  }
-  #footer {
-    display: none;
-  }
-}
-.typo-sidebars ul, #commentList, .categorylist, #taglist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.categorylist, #taglist {
-  font-size: 1.3em;
-}
-.typo-sidebars h3 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  padding-bottom: 0;
-}
+    display: block; }
+
+  /* line 324, style.sass */
+  #navigation, #alignleft, #alignright, #sidebar, #footer {
+    display: none; } }

@@ -190,7 +190,7 @@
   /* line 156, style.sass */
   #sidebar, #logo {
     float: right;
-    padding-top: 35px;
+    padding-top: 1.5em;
     width: 24.3%; }
 
   /* line 161, style.sass */
@@ -231,80 +231,83 @@
     #footer a:hover {
       color: #999999; }
 
-  /* line 191, style.sass */
-  .search {
-    margin-top: 1em; }
+  /* line 192, style.sass */
+  .search input {
+    width: 180px;
+    height: 20px;
+    padding: 4px 22px 4px;
+    background: white url("/images/opm/search.png") 5px 50% no-repeat; }
 
-  /* line 194, style.sass */
+  /* line 198, style.sass */
   .typo-sidebars ul, #commentList, .categorylist, #taglist {
     list-style: none;
     margin: 0;
     padding: 0; }
 
-  /* line 199, style.sass */
+  /* line 203, style.sass */
   .categorylist, #taglist {
     font-size: 1.3em; }
 
-  /* line 202, style.sass */
+  /* line 206, style.sass */
   .typo-sidebars h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
     padding-bottom: 0; } }
 @media screen and (max-width: 980px) {
-  /* line 210, style.sass */
+  /* line 214, style.sass */
   #container {
     width: 100%; }
 
-  /* line 213, style.sass */
+  /* line 217, style.sass */
   h2 {
     font-size: 1.8em; }
 
-  /* line 215, style.sass */
+  /* line 219, style.sass */
   h3 {
     font-size: 1.5em; }
 
-  /* line 217, style.sass */
+  /* line 221, style.sass */
   p, .article .content ul, .article .content ol {
     font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  /* line 223, style.sass */
+  /* line 227, style.sass */
   h2 {
     font-size: 1.5em; }
 
-  /* line 225, style.sass */
+  /* line 229, style.sass */
   h3 {
     font-size: 1.3em; }
 
-  /* line 228, style.sass */
+  /* line 232, style.sass */
   #container {
     width: 100%; }
 
-  /* line 231, style.sass */
+  /* line 235, style.sass */
   #logo, .entry {
     display: block;
     float: none;
     width: 100%; }
 
-  /* line 236, style.sass */
+  /* line 240, style.sass */
   #sidebar {
     display: none; }
 
-  /* line 239, style.sass */
+  /* line 243, style.sass */
   #logo {
     padding-top: 0;
     text-align: center; }
 
-  /* line 243, style.sass */
+  /* line 247, style.sass */
   #container {
     margin: 0;
     padding: 0; }
 
-  /* line 247, style.sass */
+  /* line 251, style.sass */
   #mobile-nav {
     display: block;
     text-align: center; } }
 @media print {
-  /* line 254, style.sass */
+  /* line 258, style.sass */
   body {
     background: white;
     color: black;
@@ -312,10 +315,10 @@
     margin: 10px;
     width: auto; }
 
-  /* line 261, style.sass */
+  /* line 265, style.sass */
   #container {
     display: block; }
 
-  /* line 264, style.sass */
+  /* line 268, style.sass */
   #navigation, #alignleft, #alignright, #sidebar, #footer {
     display: none; } }

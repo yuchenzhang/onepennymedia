@@ -1,0 +1,284 @@
+$serif: Georgia,Times,serif
+$sans: Helvetica Neue, Arial, Verdana, sans-serif
+
+@media all
+  html
+    font-family: $sans
+
+  body
+    background-color: #fff
+    color: #000
+    font: normal 100%
+    padding: 10px
+    -webkit-font-smoothing: antialiased
+
+  h1, h2
+    font-family: $serif
+
+  h1
+    color: #d3d3d3
+    font-size: 280%
+    font-weight: normal
+    letter-spacing: .7px
+    padding: 0
+    a:link, a:visited
+      border-style: none
+      color: #d3d3d3
+      text-decoration: none
+
+  #tagline
+    color: #56a49f
+    font-size: 100%
+    margin-top: .5em
+    padding: 0
+    a:link, a:visited
+      color: #56a49f
+      font-size: 115%
+      padding: 0
+
+  h2
+    color: #333
+    font-size: 2.2em
+    font-weight: normal
+    margin-top: 1em
+
+  h3
+    color: #666
+    font-size: 1.8em
+    font-weight: normal
+    line-height: 1em
+    margin-top: 1.5em
+
+  h4
+    color: #000
+    font-size: 1em
+
+  h5
+    color: #666
+    font-size: .7em
+    font-weight: bold
+    letter-spacing: .2em
+    line-height: .2em
+
+  h6
+    color: #666
+    font-size: 1.2em
+    font-weight: normal
+    letter-spacing: .1em
+    line-height: 1.5em
+    margin: 0 0 10px 0
+    margin-bottom: 1em
+    strong
+      color: #56a49f
+      font-weight: bold
+
+  img
+    border: 0
+    padding: 3px
+    a
+      border: 0
+
+  p
+    color: #333
+    font-size: 1.3em
+    line-height: 1.45em
+    margin: 0 0 10px 0
+    text-indent: 0
+    -webkit-font-smoothing: antialiased
+
+
+  @mixin link-style
+    border: 0
+    border-style: none
+    border-width: 0
+    text-decoration: none
+  a:link
+    @include link-style
+    color: #333
+  a:visited
+    @include link-style
+    color: #333
+  a:hover
+    @include link-style
+    color: #999
+
+  #container
+    margin: 40px auto
+    overflow: hidden
+    padding: 0 1em
+    width: 980px
+
+  .entry
+    float: left
+    margin: auto
+    margin-top: 2em
+    width: 70%
+
+  #fullwidth
+    float: left
+    padding: 5px
+    width: 100%
+
+  .article
+    h1, h2, h3, h4
+      font-family: $sans
+    .page-header
+      font-family: $serif
+    .content
+      @mixin article-link-style
+        border-color: #c0c0c0
+        border-style: none none solid none
+        border-width: 0 0 1px 0
+        text-decoration: none
+      a:link
+        @include article-link-style
+        color: #303030
+      a:visited
+        @include article-link-style
+        color: #303030
+      a:hover
+        color: #999
+        @include article-link-style
+      ul, ol
+        font-size: 1.3em
+        padding: .1em 0 1em 1.3em
+        -webkit-font-smoothing: antialiased
+      li
+        color: #333
+        line-height: 1.5em
+        padding: .2em 0 0 0
+      blockquote
+        border-left: 2px solid #a5abab
+        color: #666
+        margin: 1.8em .8em
+        padding: 0 1em 0 1em
+
+  #sidebar, #logo
+    float: right
+    padding-top: 35px
+    width: 24.3%
+
+  #sidebar
+    clear: right
+
+  #logo img
+    margin: 1em 0 0 -5px
+    max-width: 100%
+
+  .sponsor img
+    margin-left: -5px
+    max-width: 100%
+
+  #mobile-nav
+    display: none
+
+  subscribe
+    ul
+      float: left
+      font-size: 1em
+      list-style: none inside
+      margin: 0 0 40px 0
+      padding: 0
+      li
+        line-height: 18px
+        padding: 0
+    a:link
+      color: #56a49f
+    a:visited
+      color: #56a49f
+    a:hover
+      color: #999
+
+  #footer
+    margin: 40px auto
+    max-width: 59.375em
+    overflow: hidden
+    padding: 0 1em
+    p
+      color: #c0c0c0
+      font-size: .8em
+      letter-spacing: .2em
+      margin: 0
+      padding: 4px 0
+    a
+      color: #888
+    a:hover
+      color: #999
+
+  .search
+    margin-top: 1em
+
+  .typo-sidebars ul, #commentList, .categorylist, #taglist
+    list-style: none
+    margin: 0
+    padding: 0
+
+  .categorylist, #taglist
+    font-size: 1.3em
+
+  .typo-sidebars h3
+    font-size: 1.3em
+    margin-bottom: 10px
+    padding-bottom: 0
+
+// end of @media all
+
+@media screen and (max-width: 980px)
+  #container
+    width: 100%
+
+  h2
+    font-size: 1.8em
+  h3
+    font-size: 1.5em
+  p, .article .content ul, .article .content ol
+    font-size: 1em
+
+// end of @media screen and (max-width: 980px)
+
+@media screen and (max-width: 480px)
+  h2
+    font-size: 1.5em
+  h3
+    font-size: 1.3em
+
+  #container
+    width: 100%
+
+  #logo, .entry
+    display: block
+    float: none
+    width: 100%
+
+  #sidebar
+    display: none
+
+  #logo
+    padding-top: 0
+    text-align: center
+
+  #container
+    margin: 0
+    padding: 0
+
+  #mobile-nav
+    display: block
+    text-align: center
+
+// end of @media screen and (max-width: 480px)
+
+@media print
+  body
+    background: white
+    color: black
+    font-size: 14px
+    margin: 10px
+    width: auto
+
+  #container
+    display: block
+
+  #navigation, #alignleft, #alignright, #sidebar, #footer
+    display: none
+
+// end of @media print

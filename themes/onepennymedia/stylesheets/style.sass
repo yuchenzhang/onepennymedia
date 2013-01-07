@@ -86,6 +86,8 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     text-indent: 0
     -webkit-font-smoothing: antialiased
 
+  hr.mobile
+    display: none
 
   @mixin link-style
     border: 0
@@ -155,7 +157,7 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
 
   #sidebar, #logo
     float: right
-    padding-top: 35px
+    padding-top: 1.5em
     width: 24.3%
 
   #sidebar
@@ -171,23 +173,6 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
 
   #mobile-nav
     display: none
-
-  subscribe
-    ul
-      float: left
-      font-size: 1em
-      list-style: none inside
-      margin: 0 0 40px 0
-      padding: 0
-      li
-        line-height: 18px
-        padding: 0
-    a:link
-      color: #56a49f
-    a:visited
-      color: #56a49f
-    a:hover
-      color: #999
 
   #footer
     margin: 40px auto
@@ -205,8 +190,12 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     a:hover
       color: #999
 
-  .search
-    margin-top: 1em
+  #search
+    input
+      width: 180px
+      height: 20px
+      padding: 4px 22px 4px
+      background: white url("/images/opm/search.png") 5px 50% no-repeat
 
   .typo-sidebars ul, #commentList, .categorylist, #taglist
     list-style: none
@@ -226,6 +215,9 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
 @media screen and (max-width: 980px)
   #container
     width: 100%
+
+  #search input
+    width: 60%
 
   h2
     font-size: 1.8em
@@ -251,7 +243,14 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     width: 100%
 
   #sidebar
-    display: none
+    float: none
+    width: 100%
+    #search
+      margin: 40px 0
+      input
+        width: 70%
+    .typo-sidebars
+      display: none
 
   #logo
     padding-top: 0
@@ -264,6 +263,17 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
   #mobile-nav
     display: block
     text-align: center
+
+  #footer
+    padding: 0
+    margin-top: 20px
+
+  hr.mobile
+    display: block
+    margin-top: 20px
+    border: 0
+    height: 1px
+    background-color: #999
 
 // end of @media screen and (max-width: 480px)
 
@@ -278,7 +288,7 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
   #container
     display: block
 
-  #navigation, #alignleft, #alignright, #sidebar, #footer
+  #navigation, #alignleft, #alignright, #sidebars, #footer
     display: none
 
 // end of @media print

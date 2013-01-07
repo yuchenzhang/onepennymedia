@@ -1,9 +1,14 @@
 <div id='sidebar'>
-  <div class="search">
+
+  <hr class="mobile">
+
+  <div id="search">
     <%= form_tag('/search', method: :get) do %>
       <%= text_field_tag :q, params[:q], placeholder: '… Search Articles' %>
     <% end %>
   </div>
+
+  <hr class="mobile">
 
   <div class="typo-sidebars">
     <%= render_sidebars %>

@@ -190,6 +190,9 @@
     padding-top: 35px;
     width: 24.3%;
   }
+  #logo img{
+    margin-top: 1em;
+  }
   #mobile-nav{
     display:none;
   }

@@ -1,11 +1,11 @@
 # This is the config file only for the onepennymedia theme.
 
 blog_title: One Penny
-blog_description: A web media reporting about web/app startups in Hangzhou.
+blog_description: The blog media of OnePennyEntrepreneur.com.
 footer:
   links:
     'About': '/pages/about'
-    'Contact': 'mailto:shaoshing@me.com'
+    'Contact': 'mailto:info@yifency.com'
     'RSS': 'http://feeds.feedburner.com/OnePennyMedia'
     'One Penny Entrepreneur EN': 'http://www.onepennyentrepreneur.com'
     'CN': 'https://www.yifency.com'

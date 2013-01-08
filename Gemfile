@@ -40,8 +40,6 @@ gem 'acts_as_tree_rails3'
 gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 
 gem 'unicorn'
-# Use edge capistrano for bug fix in normalize_asset_timestamps untile the new version is released (> 2.13.5)
-gem 'capistrano', :git => 'git://github.com/capistrano/capistrano.git'
 
 group :development, :test do
   gem 'ruby-debug19'
@@ -54,5 +52,7 @@ group :development, :test do
 end
 
 group :deploy do
+  # Use edge capistrano for bug fix in normalize_asset_timestamps untile the new version is released (> 2.13.5)
+  gem 'capistrano', :git => 'git://github.com/capistrano/capistrano.git'
   gem 'capistrano-unicorn', :require => false
 end

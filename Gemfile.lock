@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/capistrano/capistrano.git
+  revision: 3100b9118b1e85f7e7529c2b04c34f23c8c3e418
+  specs:
+    capistrano (2.13.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -36,12 +47,6 @@ GEM
     arel (2.0.10)
     bluecloth (2.2.0)
     builder (2.1.2)
-    capistrano (2.13.5)
-      highline
-      net-scp (>= 1.0.0)
-      net-sftp (>= 2.0.0)
-      net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.1.0)
     capistrano-unicorn (0.1.6)
       capistrano
     coderay (0.9.8)
@@ -171,7 +176,7 @@ DEPENDENCIES
   acts_as_tree_rails3
   addressable (~> 2.1.0)
   bluecloth (>= 2.0.5)
-  capistrano
+  capistrano!
   capistrano-unicorn
   coderay (~> 0.9)
   factory_girl (= 2.2.0)

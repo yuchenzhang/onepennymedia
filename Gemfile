@@ -54,5 +54,6 @@ end
 group :deploy do
   # Use edge capistrano for bug fix in normalize_asset_timestamps untile the new version is released (> 2.13.5)
   gem 'capistrano', :git => 'git://github.com/capistrano/capistrano.git'
+  # Use edge capistrano-unicorn for bug fixes.
   gem 'capistrano-unicorn', :require => false, :git => 'git://github.com/sosedoff/capistrano-unicorn.git'
 end

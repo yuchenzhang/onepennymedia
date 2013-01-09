@@ -1,6 +1,14 @@
 $serif: Georgia,Times,serif
 $sans: Helvetica Neue, Arial, Verdana, sans-serif
 
+// credit belongs to: https://gist.github.com/1432554
+@mixin background-image-retina($file, $type, $width, $height)
+  background-image: url($file + '.' + $type)
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2)
+    &
+      background-image: url($file + '@2x.' + $type)
+      -webkit-background-size: $width $height
+
 @media all
   html
     font-family: $sans
@@ -84,6 +92,21 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     margin: 0 0 10px 0
     text-indent: 0
     -webkit-font-smoothing: antialiased
+
+  input
+    height: 20px
+
+  input, textarea, #form-submit-button
+    margin: 5px 0
+    padding: 5px 10px
+    border: 1px solid #999
+    font-size: 0.8em
+
+  #form-submit-button
+    background-color: white
+    line-height: 20px
+    height: auto
+    padding: 5px 10px
 
   hr.mobile
     display: none
@@ -194,7 +217,9 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
       width: 180px
       height: 20px
       padding: 4px 22px 4px
-      background: white url("/images/opm/search.png") 5px 50% no-repeat
+      background-position: 5px 50%
+      background-repeat: no-repeat
+      @include background-image-retina("/images/opm/search", "png", 12px, 12px)
 
   .typo-sidebars ul, #commentList, .categorylist, #taglist
     list-style: none

@@ -74,7 +74,6 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
 
   img
     border: 0
-    padding: 3px
     a
       border: 0
 
@@ -127,6 +126,7 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     .page-header
       font-family: $serif
     .content
+      clear: both
       @mixin article-link-style
         border-color: #c0c0c0
         border-style: none none solid none
@@ -164,11 +164,10 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     clear: right
 
   #logo img
-    margin: 1em 0 0 -5px
+    margin-top: 1em
     max-width: 100%
 
   .sponsor img
-    margin-left: -5px
     max-width: 100%
 
   #mobile-nav
@@ -209,6 +208,82 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     font-size: 1.3em
     margin-bottom: 10px
     padding-bottom: 0
+
+  .clearfix
+    clear: both
+
+  .share
+    float: right
+    clear: both
+    position: relative
+    .button
+      background-color: white
+      border: 1px solid white
+      z-index: 99
+      position: relative
+      padding: 10px 20px
+      -webkit-border-radius: 2px
+      -moz-border-radius: 2px
+      border-radius: 2px
+      img
+        height: 18px
+        padding: 0
+        float: left
+      span
+        line-height: 18px
+        font-weight: bold
+        padding-left: 5px
+    .services
+      z-index: 98
+      display: none
+      position: absolute
+      top: 100%
+      right: 0
+      margin-top: -2px
+      background-color: white
+      ul
+        list-style: none
+        margin: 0
+        padding: 5px
+      li
+        padding: 5px 15px
+        width: auto
+        height: 32px
+      li.last
+        border-bottom: 0
+      li a
+        text-align: center
+        width: 130px
+        line-height: 32px
+        font-weight: bold
+        color: white
+        float: right
+      .service-fb
+        a
+          background-color: #3B5998
+      .service-t
+        a
+          background-color: #18B8EE
+      .service-li
+        a
+          background-color: #388DB4
+      .service-r
+        a
+          background-color: #7DA2CE
+      .service-g
+        a
+          background-color: #DD4B39
+      .service-hn
+        a
+          background-color: #F60
+
+  .share.active
+    .button
+      border: 1px solid #999
+      border-bottom: 1px solid white
+    .services
+      display: block
+      border: 1px solid #999
 
 // end of @media all
 

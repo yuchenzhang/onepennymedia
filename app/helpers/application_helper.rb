@@ -171,8 +171,6 @@ module ApplicationHelper
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="#{ url_for :controller => '/xml', :action => 'rsd' }" />
   <link rel="alternate" type="application/atom+xml" title="Atom" href="#{ feed_atom }" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="#{ feed_rss }" />
-  #{ javascript_include_tag 'cookies', 'prototype', 'effects', 'builder', 'typo', :cache => true }
-  #{ stylesheet_link_tag 'coderay', 'user-styles', :cache => true }
   #{ javascript_include_lang }
   #{ javascript_tag "window._token = '#{form_authenticity_token}'"}
   #{ page_header_includes.join("\n") }
@@ -262,14 +260,14 @@ module ApplicationHelper
   def show_menu_for_post_type(posttype, before='<li>', after='</li>')
     list = Article.find(:all, :conditions => ['post_type = ?', post_type])
     html = ''
-    
+
     return if list.size.zero?
     list.each do |item|
       html << before
       html << link_to_permalink(item, item.title)
       html << after
     end
-    
+
     html
   end
 

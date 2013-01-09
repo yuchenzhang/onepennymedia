@@ -1,12 +1,12 @@
-jQuery(function(){
-  jQuery('.share').hover(function(){jQuery(this).toggleClass('active');});
-  jQuery('.share').each(function(){
-    var shareButton = jQuery(this);
+$(function(){
+  $('.share').hover(function(){$(this).toggleClass('active');});
+  $('.share').each(function(){
+    var shareButton = $(this);
     var articleEle = shareButton.parent('.article');
     var articleUrl = encodeURIComponent(articleEle.find('.page-header a').attr('href'));
     var articleTitle = encodeURIComponent(articleEle.find('.page-header a').text());
 
-    jQuery.each({
+    $.each({
       'service-fb': 'http://www.facebook.com/sharer.php?t=#TITLE#&u=#URL#',
       'service-t':  'https://twitter.com/home?status=#TITLE#:#URL#',
       'service-li': 'http://www.linkedin.com/shareArticle?mini=true&url=#URL#&title=#TITLE#',

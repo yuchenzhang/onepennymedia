@@ -1,5 +1,8 @@
 $(function(){
-  $('.share').hover(function(){$(this).toggleClass('active');});
+  $('.share').click(function(){$(this).toggleClass('active');}).
+    mouseenter(function(){$(this).addClass('active');}).
+    mouseleave(function(){$(this).removeClass('active');});
+
   $('.share').each(function(){
     var shareButton = $(this);
     var articleEle = shareButton.parent('.article');

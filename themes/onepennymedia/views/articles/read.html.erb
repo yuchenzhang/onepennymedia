@@ -1,28 +1,9 @@
 <div class="article" id="article-<%= @article.id %>">
   <h2 class='page-header'><%= link_to_permalink(@article,@article.title) %></h2>
 
-  <div class="share">
-    <div class="button">
-      <img src="/images/opm/share.png"></img>
-      <span>share</span>
-    </div>
+  <%= render "share_button" %>
 
-    <div class="services">
-      <ul>
-        <li class="service-fb"><a>Facebook</a></li>
-        <li class="service-t"><a>Twitter</a></li>
-        <li class="service-li"><a>Linkedin</a></li>
-        <li class="service-r"><a>Reddit</a></li>
-        <li class="service-g last"><a>Google+</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script>
-    jQuery('.share').hover(function(){jQuery(this).toggleClass('active');});
-  </script>
-
-  <div class="content" style="clear:both">
+  <div class="content">
     <%= @article.html(:body) %>
     <%= @article.html(:extended) %>
   </div>

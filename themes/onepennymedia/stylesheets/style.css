@@ -273,16 +273,18 @@
       border: 1px solid white;
       z-index: 99;
       position: relative;
-      padding: 5px; }
+      padding: 10px 20px; }
       /* line 226, style.sass */
       .share .button img {
         height: 18px;
-        padding: 0; }
-      /* line 229, style.sass */
+        padding: 0;
+        float: left; }
+      /* line 230, style.sass */
       .share .button span {
         line-height: 18px;
-        font-weight: bold; }
-    /* line 237, style.sass */
+        font-weight: bold;
+        padding-left: 5px; }
+    /* line 234, style.sass */
     .share .services {
       z-index: 98;
       display: none;
@@ -291,146 +293,125 @@
       right: 0;
       margin-top: -1px;
       background-color: white; }
-      /* line 245, style.sass */
+      /* line 242, style.sass */
       .share .services ul {
         list-style: none;
         margin: 0;
-        padding: 0; }
-      /* line 249, style.sass */
+        padding: 5px; }
+      /* line 246, style.sass */
       .share .services li {
-        padding: 10px;
-        border-bottom: 1px solid #bbbbbb;
-        width: 150px;
+        padding: 5px 15px;
+        width: auto;
         height: 32px; }
-      /* line 254, style.sass */
+      /* line 250, style.sass */
       .share .services li.last {
         border-bottom: 0; }
-      /* line 256, style.sass */
-      .share .services li div {
-        height: 32px;
-        width: 32px;
-        float: left;
-        margin-right: 10px; }
-      /* line 261, style.sass */
+      /* line 252, style.sass */
       .share .services li a {
+        text-align: center;
+        width: 100px;
         line-height: 32px;
         font-weight: bold;
-        padding: 0 10px;
         color: white;
-        float: left; }
-      /* line 269, style.sass */
-      .share .services .service-fb div {
-        background: url("/images/opm/services-32x32.gif") 0 -160px no-repeat; }
-      /* line 271, style.sass */
+        float: right; }
+      /* line 262, style.sass */
       .share .services .service-fb a {
         background-color: #3b5998; }
-      /* line 274, style.sass */
-      .share .services .service-t div {
-        background: url("/images/opm/services-32x32.gif") 0 -704px no-repeat; }
-      /* line 276, style.sass */
+      /* line 265, style.sass */
       .share .services .service-t a {
         background-color: #18b8ee; }
-      /* line 279, style.sass */
-      .share .services .service-li div {
-        background: url("/images/opm/services-32x32.gif") 0 -320px no-repeat; }
-      /* line 281, style.sass */
+      /* line 268, style.sass */
       .share .services .service-li a {
         background-color: #388db4; }
-      /* line 284, style.sass */
-      .share .services .service-r div {
-        background: url("/images/opm/services-32x32.gif") 0 -608px no-repeat; }
-      /* line 286, style.sass */
+      /* line 271, style.sass */
       .share .services .service-r a {
         background-color: #7da2ce; }
-      /* line 289, style.sass */
-      .share .services .service-g div {
-        background: url("/images/opm/services-32x32.gif") 0 -288px no-repeat; }
-      /* line 291, style.sass */
+      /* line 274, style.sass */
       .share .services .service-g a {
         background-color: #dd4b39; }
 
-  /* line 295, style.sass */
+  /* line 278, style.sass */
   .share.active .button {
     border: 1px solid #999999;
     border-bottom: 1px solid white; }
-  /* line 298, style.sass */
+  /* line 281, style.sass */
   .share.active .services {
     display: block;
     border: 1px solid #999999; } }
 @media screen and (max-width: 980px) {
-  /* line 305, style.sass */
+  /* line 288, style.sass */
   #container {
     width: 100%; }
 
-  /* line 308, style.sass */
+  /* line 291, style.sass */
   #search input {
     width: 60%; }
 
-  /* line 311, style.sass */
+  /* line 294, style.sass */
   h2 {
     font-size: 1.8em; }
 
-  /* line 313, style.sass */
+  /* line 296, style.sass */
   h3 {
     font-size: 1.5em; }
 
-  /* line 315, style.sass */
+  /* line 298, style.sass */
   p, .article .content ul, .article .content ol {
     font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  /* line 321, style.sass */
+  /* line 304, style.sass */
   h2 {
     font-size: 1.5em; }
 
-  /* line 323, style.sass */
+  /* line 306, style.sass */
   h3 {
     font-size: 1.3em; }
 
-  /* line 326, style.sass */
+  /* line 309, style.sass */
   #container {
     width: 100%; }
 
-  /* line 329, style.sass */
+  /* line 312, style.sass */
   #logo, .entry {
     display: block;
     float: none;
     width: 100%; }
 
-  /* line 334, style.sass */
+  /* line 317, style.sass */
   #sidebar {
     float: none;
     width: 100%; }
-    /* line 337, style.sass */
+    /* line 320, style.sass */
     #sidebar #search {
       margin: 40px 0; }
-      /* line 339, style.sass */
+      /* line 322, style.sass */
       #sidebar #search input {
         width: 70%; }
-    /* line 341, style.sass */
+    /* line 324, style.sass */
     #sidebar .typo-sidebars {
       display: none; }
 
-  /* line 344, style.sass */
+  /* line 327, style.sass */
   #logo {
     padding-top: 0;
     text-align: center; }
 
-  /* line 348, style.sass */
+  /* line 331, style.sass */
   #container {
     margin: 0;
     padding: 0; }
 
-  /* line 352, style.sass */
+  /* line 335, style.sass */
   #mobile-nav {
     display: block;
     text-align: center; }
 
-  /* line 356, style.sass */
+  /* line 339, style.sass */
   #footer {
     padding: 0;
     margin-top: 20px; }
 
-  /* line 360, style.sass */
+  /* line 343, style.sass */
   hr.mobile {
     display: block;
     margin-top: 20px;
@@ -438,7 +419,7 @@
     height: 1px;
     background-color: #999999; } }
 @media print {
-  /* line 370, style.sass */
+  /* line 353, style.sass */
   body {
     background: white;
     color: black;
@@ -446,10 +427,10 @@
     margin: 10px;
     width: auto; }
 
-  /* line 377, style.sass */
+  /* line 360, style.sass */
   #container {
     display: block; }
 
-  /* line 380, style.sass */
+  /* line 363, style.sass */
   #navigation, #alignleft, #alignright, #sidebars, #footer {
     display: none; } }

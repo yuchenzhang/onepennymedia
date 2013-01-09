@@ -1,5 +1,8 @@
 <div class="article" id="article-<%= @article.id %>">
   <h2 class='page-header'><%= link_to_permalink(@article,@article.title) %></h2>
+
+  <%= render "share_button" %>
+
   <div class="content">
     <%= @article.html(:body) %>
     <%= @article.html(:extended) %>

@@ -210,6 +210,95 @@ $sans: Helvetica Neue, Arial, Verdana, sans-serif
     margin-bottom: 10px
     padding-bottom: 0
 
+  .clearfix
+    clear: both
+
+  .share
+    float: right
+    clear: both
+    position: relative
+    .button
+      background-color: white
+      border: 1px solid white
+      z-index: 99
+      position: relative
+      padding: 5px
+      img
+        height: 18px
+        padding: 0
+      span
+        line-height: 18px
+        font-weight: bold
+
+        // float: left
+        // height: 30px
+        // width: 20px
+        // background: url("/images/opm/share.png") center no-repeat
+    .services
+      z-index: 98
+      display: none
+      position: absolute
+      top: 100%
+      right: 0
+      margin-top: -1px
+      background-color: white
+      ul
+        list-style: none
+        margin: 0
+        padding: 0
+      li
+        padding: 10px
+        border-bottom: 1px solid #BBB
+        width: 150px
+        height: 32px
+      li.last
+        border-bottom: 0
+      li div
+        height: 32px
+        width: 32px
+        float: left
+        margin-right: 10px
+      li a
+        line-height: 32px
+        font-weight: bold
+        padding: 0 10px
+        color: white
+        float: left
+
+      .service-fb
+        div
+          background: url("/images/opm/services-32x32.gif") 0 -160px no-repeat
+        a
+          background-color: #3B5998
+      .service-t
+        div
+          background: url("/images/opm/services-32x32.gif") 0 -704px no-repeat
+        a
+          background-color: #18B8EE
+      .service-li
+        div
+          background: url("/images/opm/services-32x32.gif") 0 -320px no-repeat
+        a
+          background-color: #388DB4
+      .service-r
+        div
+          background: url("/images/opm/services-32x32.gif") 0 -608px no-repeat
+        a
+          background-color: #7DA2CE
+      .service-g
+        div
+          background: url("/images/opm/services-32x32.gif") 0 -288px no-repeat
+        a
+          background-color: #DD4B39
+
+  .share.active
+    .button
+      border: 1px solid #999
+      border-bottom: 1px solid white
+    .services
+      display: block
+      border: 1px solid #999
+
 // end of @media all
 
 @media screen and (max-width: 980px)

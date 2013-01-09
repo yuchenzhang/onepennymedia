@@ -256,81 +256,181 @@
   .typo-sidebars h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
-    padding-bottom: 0; } }
-@media screen and (max-width: 980px) {
+    padding-bottom: 0; }
+
+  /* line 213, style.sass */
+  .clearfix {
+    clear: both; }
+
   /* line 216, style.sass */
+  .share {
+    float: right;
+    clear: both;
+    position: relative; }
+    /* line 220, style.sass */
+    .share .button {
+      background-color: white;
+      border: 1px solid white;
+      z-index: 99;
+      position: relative;
+      padding: 5px; }
+      /* line 226, style.sass */
+      .share .button img {
+        height: 18px;
+        padding: 0; }
+      /* line 229, style.sass */
+      .share .button span {
+        line-height: 18px;
+        font-weight: bold; }
+    /* line 237, style.sass */
+    .share .services {
+      z-index: 98;
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: -1px;
+      background-color: white; }
+      /* line 245, style.sass */
+      .share .services ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+      /* line 249, style.sass */
+      .share .services li {
+        padding: 10px;
+        border-bottom: 1px solid #bbbbbb;
+        width: 150px;
+        height: 32px; }
+      /* line 254, style.sass */
+      .share .services li.last {
+        border-bottom: 0; }
+      /* line 256, style.sass */
+      .share .services li div {
+        height: 32px;
+        width: 32px;
+        float: left;
+        margin-right: 10px; }
+      /* line 261, style.sass */
+      .share .services li a {
+        line-height: 32px;
+        font-weight: bold;
+        padding: 0 10px;
+        color: white;
+        float: left; }
+      /* line 269, style.sass */
+      .share .services .service-fb div {
+        background: url("/images/opm/services-32x32.gif") 0 -160px no-repeat; }
+      /* line 271, style.sass */
+      .share .services .service-fb a {
+        background-color: #3b5998; }
+      /* line 274, style.sass */
+      .share .services .service-t div {
+        background: url("/images/opm/services-32x32.gif") 0 -704px no-repeat; }
+      /* line 276, style.sass */
+      .share .services .service-t a {
+        background-color: #18b8ee; }
+      /* line 279, style.sass */
+      .share .services .service-li div {
+        background: url("/images/opm/services-32x32.gif") 0 -320px no-repeat; }
+      /* line 281, style.sass */
+      .share .services .service-li a {
+        background-color: #388db4; }
+      /* line 284, style.sass */
+      .share .services .service-r div {
+        background: url("/images/opm/services-32x32.gif") 0 -608px no-repeat; }
+      /* line 286, style.sass */
+      .share .services .service-r a {
+        background-color: #7da2ce; }
+      /* line 289, style.sass */
+      .share .services .service-g div {
+        background: url("/images/opm/services-32x32.gif") 0 -288px no-repeat; }
+      /* line 291, style.sass */
+      .share .services .service-g a {
+        background-color: #dd4b39; }
+
+  /* line 295, style.sass */
+  .share.active .button {
+    border: 1px solid #999999;
+    border-bottom: 1px solid white; }
+  /* line 298, style.sass */
+  .share.active .services {
+    display: block;
+    border: 1px solid #999999; } }
+@media screen and (max-width: 980px) {
+  /* line 305, style.sass */
   #container {
     width: 100%; }
 
-  /* line 219, style.sass */
+  /* line 308, style.sass */
   #search input {
     width: 60%; }
 
-  /* line 222, style.sass */
+  /* line 311, style.sass */
   h2 {
     font-size: 1.8em; }
 
-  /* line 224, style.sass */
+  /* line 313, style.sass */
   h3 {
     font-size: 1.5em; }
 
-  /* line 226, style.sass */
+  /* line 315, style.sass */
   p, .article .content ul, .article .content ol {
     font-size: 1em; } }
 @media screen and (max-width: 480px) {
-  /* line 232, style.sass */
+  /* line 321, style.sass */
   h2 {
     font-size: 1.5em; }
 
-  /* line 234, style.sass */
+  /* line 323, style.sass */
   h3 {
     font-size: 1.3em; }
 
-  /* line 237, style.sass */
+  /* line 326, style.sass */
   #container {
     width: 100%; }
 
-  /* line 240, style.sass */
+  /* line 329, style.sass */
   #logo, .entry {
     display: block;
     float: none;
     width: 100%; }
 
-  /* line 245, style.sass */
+  /* line 334, style.sass */
   #sidebar {
     float: none;
     width: 100%; }
-    /* line 248, style.sass */
+    /* line 337, style.sass */
     #sidebar #search {
       margin: 40px 0; }
-      /* line 250, style.sass */
+      /* line 339, style.sass */
       #sidebar #search input {
         width: 70%; }
-    /* line 252, style.sass */
+    /* line 341, style.sass */
     #sidebar .typo-sidebars {
       display: none; }
 
-  /* line 255, style.sass */
+  /* line 344, style.sass */
   #logo {
     padding-top: 0;
     text-align: center; }
 
-  /* line 259, style.sass */
+  /* line 348, style.sass */
   #container {
     margin: 0;
     padding: 0; }
 
-  /* line 263, style.sass */
+  /* line 352, style.sass */
   #mobile-nav {
     display: block;
     text-align: center; }
 
-  /* line 267, style.sass */
+  /* line 356, style.sass */
   #footer {
     padding: 0;
     margin-top: 20px; }
 
-  /* line 271, style.sass */
+  /* line 360, style.sass */
   hr.mobile {
     display: block;
     margin-top: 20px;
@@ -338,7 +438,7 @@
     height: 1px;
     background-color: #999999; } }
 @media print {
-  /* line 281, style.sass */
+  /* line 370, style.sass */
   body {
     background: white;
     color: black;
@@ -346,10 +446,10 @@
     margin: 10px;
     width: auto; }
 
-  /* line 288, style.sass */
+  /* line 377, style.sass */
   #container {
     display: block; }
 
-  /* line 291, style.sass */
+  /* line 380, style.sass */
   #navigation, #alignleft, #alignright, #sidebars, #footer {
     display: none; } }

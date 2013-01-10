@@ -29,6 +29,8 @@ module TypoBlog
 
     # Filter sensitive parameters from the log file
     config.filter_parameters << :password
+
+    config.time_zone = 'Amsterdam'
   end
 
   if RUBY_VERSION < "1.9"

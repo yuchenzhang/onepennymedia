@@ -3,7 +3,7 @@
     <%= (controller.controller_name == 'redirect') ? article.title : link_to_permalink(article,article.title) %>
   </h2>
 
-  <%= render "articles/share_button" %>
+  <%= render "articles/share_button", article: article %>
 
   <div class="content">
     <%= render 'articles/protected_article_content', { :article => article } %>

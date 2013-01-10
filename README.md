@@ -11,7 +11,8 @@ One Penny Media is based on the blogging engine called: [Typo](https://github.co
 
 ### requirement
 
-* ruby 1.9.3p286 # install via rbenv or rvm.
+* ruby 1.9.3p286 (install via rbenv or rvm.)
+* Imagemagick (for the Media Library Feature in the admin section)
 
 ### setup
 

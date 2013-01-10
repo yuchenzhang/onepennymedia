@@ -41,6 +41,7 @@ namespace :onepennymedia do
 
   task :create_symlink, :roles => :app do
     run "ln -sf #{shared_path}/sqlite3 #{latest_release}/db/sqlite3"
+    run "ln -sf #{shared_path}/system/uploaded_files #{latest_release}/public/files"
   end
 end
 

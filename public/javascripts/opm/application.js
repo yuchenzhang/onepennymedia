@@ -5,9 +5,8 @@ $(function(){
 
   $('.share').each(function(){
     var shareButton = $(this);
-    var articleEle = shareButton.parent('.article');
-    var articleUrl = encodeURIComponent(articleEle.find('.page-header a').attr('href'));
-    var articleTitle = encodeURIComponent(articleEle.find('.page-header a').text());
+    var articleUrl = encodeURIComponent(shareButton.data('article-short-url'));
+    var articleTitle = encodeURIComponent(shareButton.data('article-title'));
 
     $.each({
       'service-fb': 'http://www.facebook.com/sharer.php?t=#TITLE#&u=#URL#',

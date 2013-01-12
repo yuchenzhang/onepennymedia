@@ -20,7 +20,7 @@ set :deploy_time, DateTime.now
 set :use_sudo, false
 set :default_environment, { 'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH" } # load rbenv for capistrano
 set :bundle_flags, "--deployment --without development test deploy --quiet --binstubs --shebang ruby-local-exec"
-
+set :whenever_command, "bundle exec whenever"
 
 namespace :deploy do
   desc "tail production log files"
@@ -41,11 +41,14 @@ namespace :onepennymedia do
 
   task :create_symlink, :roles => :app do
     run "ln -sf #{shared_path}/sqlite3 #{latest_release}/db/sqlite3"
+    run "ln -sf #{shared_path}/system/uploaded_files #{latest_release}/public/files"
   end
 end
 
 require "bundler/capistrano"
 require 'capistrano-unicorn'
+require "whenever/capistrano"
+
 after 'deploy:restart', 'unicorn:reload'
 after 'deploy:restart', 'unicorn:restart'
 after 'deploy:setup', 'onepennymedia:setup'

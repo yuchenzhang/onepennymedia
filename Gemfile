@@ -40,6 +40,7 @@ gem 'acts_as_tree_rails3'
 gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 
 gem 'unicorn'
+gem 'whenever', :require => false
 
 group :development, :test do
   gem 'ruby-debug19'

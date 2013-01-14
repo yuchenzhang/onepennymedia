@@ -5,7 +5,7 @@ A web media reporting about web/app startups in Hangzhou
 
 ## development
 
-One Penny Media is based on the blogging engine called: [Typo](https://github.com/fdv/typo). Quoting its description:
+One Penny Media/FAQ is based on the blogging engine called: [Typo](https://github.com/fdv/typo). Quoting its description:
 
     Typo is the oldest and most powerful Ruby on Rails blogware, providing custom templates, powerful drag and drop plugins API, advanced SEO capabilities, XMLRPC API and many more.
 
@@ -24,7 +24,7 @@ One Penny Media is based on the blogging engine called: [Typo](https://github.co
 
 ### The One Penny Theme
 
-One Penny Media is using a custom theme located at themes/onepennymedia. Most of the customization work will take place there.
+One Penny Media/FAQ is using a custom theme located at themes/onepennymedia. Most of the customization work will take place there.
 Please read theme/boostrap/README.md about how a theme was organized before started.
 
 ## deployment
@@ -39,6 +39,10 @@ The deploy script will checkedout the codes from Github using your local ssh key
 
 > ForwardAgent yes
 
+> Host faq.onepennyentrepreneur.com
+
+> ForwardAgent yes
+
 2 Enable forwarding in /etc/sshd_config (disabled in OSX by default):
 
 > AllowAgentForwarding yes
@@ -49,7 +53,7 @@ The deploy script will checkedout the codes from Github using your local ssh key
 
 4 Login to production server and test the connection with Github:
 
-> ssh media.onepennyentrepreneur.com
+> ssh media.onepennyentrepreneur.com # or ssh faq.onepennyentrepreneur.com
 
 > ssh -T git@github.com
 
@@ -63,6 +67,6 @@ The deploy script will checkout code from 'production' branch, so you should mer
 
 > git checkout production && git merge --no-ff master && git push
 
-> cap deploy
+> cap media deploy # or cap faq deploy
 
 > open http://media.onepennyentrepreneur.com

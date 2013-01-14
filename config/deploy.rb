@@ -1,16 +1,12 @@
 require "bundler/setup"
 Bundler.require :deploy
+require 'capistrano/ext/multistage'
 
 
-set :application, "onepennymedia"
-set :rails_env, "production"
-
-server "media.onepennyentrepreneur.com", :web, :app, :db, :primary => true
-set :user, "shaoshing"
-set :deploy_to, "/home/shaoshing/app"
+set :stages, %w(media faq)
 
 set :scm, :git
-set :branch, "production"
+
 set :repository, "git@github.com:yuchenzhang/onepennymedia.git"
 set :ssh_options, {:forward_agent => true}
 

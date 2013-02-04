@@ -39,6 +39,7 @@ namespace :onepennymedia do
     run "ln -sf #{shared_path}/sqlite3 #{latest_release}/db/sqlite3"
     run "ln -sf #{shared_path}/system/uploaded_files #{latest_release}/public/files" 
     run "ln -sf #{shared_path}/config/theme.yml #{latest_release}/config/theme.yml"
+    run "ln -sf #{shared_path}/views/layouts/_google_analytics.html.erb #{latest_release}/themes/onepennymedia/views/layouts/_google_analytics.html.erb"
   end
 end
 

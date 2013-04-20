@@ -18,13 +18,17 @@ class ArticlesController < ContentController
       format.rss { @limit = this_blog.limit_rss_display }
       format.atom { @limit = this_blog.limit_rss_display }
     end
-
+    if I18n.locale.to_s == 'cn'
+      articles = Article.in_chinese
+    else
+      articles = Article.not_in_chinese
+    end
     unless params[:year].blank?
       @noindex = 1
-      @articles = Article.published_at(params.values_at(:year, :month, :day)).page(params[:page]).per(@limit)
+      @articles = articles.published_at(params.values_at(:year, :month, :day)).page(params[:page]).per(@limit)
     else
       @noindex = 1 unless params[:page].blank?
-      @articles = Article.published.page(params[:page]).per(@limit)
+      @articles = articles.published.page(params[:page]).per(@limit)
     end
 
     @page_title = index_title

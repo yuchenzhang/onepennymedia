@@ -29,6 +29,10 @@
             <li class="page_item <%= 'current_page_item' if (controller.controller_name == "articles" and controller.action_name == "interviews") %>">
                 <%= link_to t("interviews"), {:controller => "articles", :action => "interviews"} %>
             </li>
+            <li class="page_item <%= session[:locale] == 'en' ? 'chinese_flag' : 'english_flag'%>">
+                <%= link_to t(session[:locale] == 'en' ? 'cn' : 'en'), root_url(:locale => (session[:locale] == 'en' ? 'cn' : 'en')) %>
+            </li>
+            
         </ul>
     </div>
 

@@ -325,3 +325,10 @@ textarea.styled {width: 280px;}
 #sidebar table tfoot #next a {text-align:center;}
 
 #searchform {padding: 10px;}
+
+.chinese_flag{
+	float:right;
+}
+.english_flag{
+	float:right;
+}

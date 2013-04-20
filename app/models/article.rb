@@ -60,6 +60,9 @@ class Article < Content
   scope :published_at, lambda {|time_params| { :conditions => { :published => true, :published_at => Article.time_delta(*time_params) }, :order => 'published_at DESC' } }
 
   setting :password,                   :string, ''
+  
+  scope :in_chinese, where {post_type.eq 'chinese'}
+  scope :not_in_chinese, where {post_type.not_eq 'chinese'}
 
   def initialize(*args)
     super

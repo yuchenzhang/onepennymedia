@@ -68,6 +68,9 @@ Rails.application.routes.draw do
   match 'articles/markup_help/:id', :to => 'articles#markup_help', :format => false
   match 'articles/tag', :to => 'articles#tag', :format => false
   match 'articles/category', :to => 'articles#category', :format => false
+  match 'articles/news', :to => 'articles#news', :format => false
+  match 'articles/ideas', :to => 'articles#ideas', :format => false
+  match 'articles/interviews', :to => 'articles#interviews', :format => false
 
   # SetupController
   match '/setup', :to => 'setup#index', :format => false

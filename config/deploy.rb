@@ -31,10 +31,6 @@ namespace :deploy do
 end
 
 namespace :onepennymedia do
-  task :setup, :roles => :app do
-    run "mkdir -p #{shared_path}/sqlite3"
-  end
-
   task :create_symlink, :roles => :app do
     run "ln -sf #{shared_path}/database.yml #{latest_release}/config/database.yml"
     run "ln -sf #{shared_path}/system/uploaded_files #{latest_release}/public/files" 
@@ -47,8 +43,8 @@ require "bundler/capistrano"
 require 'capistrano-unicorn'
 require "whenever/capistrano"
 
-before 'deploy:restart', 'onepennymedia:create_symlink'  
+before 'bundle:install', 'onepennymedia:create_symlink'  
 after 'deploy:restart', 'unicorn:reload'
 after 'deploy:restart', 'unicorn:restart'
-after 'deploy:setup', 'onepennymedia:setup'
+after "deploy:restart", "deploy:migrate" 
 

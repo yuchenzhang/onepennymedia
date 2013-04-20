@@ -32,7 +32,7 @@ end
 
 namespace :onepennymedia do
   task :create_symlink, :roles => :app do
-    run "ln -sf #{shared_path}/database.yml #{latest_release}/config/database.yml"
+    run "ln -sf #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
     run "ln -sf #{shared_path}/system/uploaded_files #{latest_release}/public/files" 
     run "ln -sf #{shared_path}/config/theme.yml #{latest_release}/config/theme.yml"
     run "ln -sf #{shared_path}/views/layouts/_google_analytics.html.erb #{latest_release}/themes/onepennymedia/views/layouts/_google_analytics.html.erb"

@@ -45,6 +45,18 @@ class ArticlesController < ContentController
       end
     end
   end
+  
+  def news
+    
+  end
+  
+  def ideas
+    
+  end
+  
+  def interviews
+    
+  end
 
   def search
     @canonical_url = url_for(:only_path => false, :controller => 'articles', :action => 'search', :page => params[:page], :q => params[:q])

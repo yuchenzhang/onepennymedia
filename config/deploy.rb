@@ -43,8 +43,8 @@ require "bundler/capistrano"
 require 'capistrano-unicorn'
 require "whenever/capistrano"
 
-before 'bundle:install', 'onepennymedia:create_symlink'  
+before 'bundle:install', 'onepennymedia:create_symlink'
+before "unicorn:reload", "deploy:migrate"  
 after 'deploy:restart', 'unicorn:reload'
-after 'deploy:restart', 'unicorn:restart'
-after "deploy:restart", "deploy:migrate" 
+after 'deploy:restart', 'unicorn:restart' 
 
